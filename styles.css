@@ -7,7 +7,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333; /* Cor de fundo do menu */
+    background-color: rgba(255, 166, 0, 0.795); /* Cor de fundo do menu */
     border-radius: 15px;
 }
 
@@ -55,6 +55,8 @@ nav a:hover {
 
 body{
     min-width: 350px;
+    background-color: #333;
+    color: white;
 }
 
 article {
