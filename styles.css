@@ -76,6 +76,11 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+.nav-left a:hover {
+    background-color: transparent;
+    color: #f2f2f2;
+}
+
 .active {
     background-color: #ff6600;
     color: #000;
