@@ -48,20 +48,28 @@ nav a:hover {
     border-radius: 5px;
 }
 
+.active {
+    background-color: #555;
+    border-radius: 5px;
+}
+
 body{
     min-width: 350px;
 }
 
-article {}
+article {
+    max-width: 80%;
+    margin: auto;
+}
 
 section{
     
 }
 
-
 footer {
     text-align: center;
-    
+    font-weight: bold;
+    margin: 3em 1em 1em 1em;
 }
 
 h1 {
@@ -70,31 +78,6 @@ h1 {
 
 h2 {
     text-align: center;
-}
-
-div {
-    display: grid;
-    flex-direction: row;
-}
-.p-first {
-    max-width: 40%;
-    margin: 1em;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.p-second {
-    max-width: 40%;
-    margin: 1em;
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.p-third {
-    max-width: 40%;
-    margin: 1em;
-    grid-column: 2;
-    grid-row: 2;
 }
 
 @media only screen and (max-width: 750px) {
