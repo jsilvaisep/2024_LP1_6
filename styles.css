@@ -177,7 +177,7 @@ section {
     display: grid;
 }
 
-<<<<<<< HEAD=======.divleft {
+.divleft {
     grid-row: 1;
     grid-column: 1;
     max-width: 150px;
