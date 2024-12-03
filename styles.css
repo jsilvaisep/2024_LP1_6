@@ -121,7 +121,24 @@ section {
     background: #333;
     border-radius: 25px;
     padding: 3em;
+    box-shadow: 0px 6px 15px #ff6600; 
+    margin: 2em;
+    display: grid;
 }
+
+.divleft {
+    grid-row: 1;
+    grid-column: 1;
+    max-width: 150px;
+    align-content: center;
+}
+
+.divright {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 2em;
+}
+
 /* Rodapé */
 footer {
     text-align: center;
