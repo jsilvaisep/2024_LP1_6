@@ -95,7 +95,6 @@ nav ul {
 }
 
 .nav-right .active {
-    color: #ff6600;
     font-weight: bold;
 }
 
@@ -190,8 +189,6 @@ section {
     grid-row: 1;
     padding: 2em;
 }
-
->>>>>>>1bd388dc41d8f57a8db386f02cdcde9c8dad8c1e
 
 /* Rodapé */
 footer {
