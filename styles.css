@@ -5,36 +5,63 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 /* Corpo */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1a; /* Cinza escuro */
-    color: #f2f2f2; /* Texto claro */
+    background-color: #1a1a1a;
+    /* Cinza escuro */
+    color: #f2f2f2;
+    /* Texto claro */
     line-height: 1.8;
     min-width: 350px;
     overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 /* Cabeçalho */
 header {
-    background: #000; /* Preto com degradê */
-    padding: 15px 0;
-    border-bottom: 3px solid #ff6600; /* Destaque laranja */
+    background: linear-gradient(90deg, #000, #222);
+    padding: 15px 20px;
+    border-bottom: 3px solid #ff6600;
+    /* Destaque laranja */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Navegação */
 nav {
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */   
     border-radius: 15px;
+    width: 100%;
 }
 
 nav ul {
@@ -43,13 +70,33 @@ nav ul {
 }
 
 .nav-left {
-    flex: 1; /* Menu à esquerda */
+    flex: 1;
+    /* Menu à esquerda */
     max-width: 15%;
 }
 
+.nav-left img {
+    max-height: 50px;
+}
+
 .nav-right {
-    flex: 2; /* Menu à direita */
+    flex: 2;
+    /* Menu à direita */
     justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-right .active {
+    color: #ff6600;
+    font-weight: bold;
 }
 
 nav ul li {
@@ -71,8 +118,10 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ff6600; /* Destaque laranja ao passar o mouse */
-    color: #000; /* Contraste claro no texto */
+    background-color: #ff6600;
+    /* Destaque laranja ao passar o mouse */
+    color: #000;
+    /* Contraste claro no texto */
     transform: scale(1.05);
 }
 
@@ -99,14 +148,16 @@ article {
 article h1 {
     text-align: center;
     font-size: 36px;
-    color: #ff6600; /* Títulos destacados */
+    color: #ff6600;
+    /* Títulos destacados */
     margin-bottom: 15px;
 }
 
 article h2 {
     text-align: center;
     font-size: 28px;
-    color: #f2f2f2; /* Subtítulos em branco */
+    color: #f2f2f2;
+    /* Subtítulos em branco */
     margin-bottom: 10px;
 }
 
@@ -117,16 +168,17 @@ section p {
     line-height: 1.8;
     text-align: justify;
 }
+
 section {
     background: #333;
     border-radius: 25px;
     padding: 3em;
-    box-shadow: 0px 6px 15px #ff6600; 
+    box-shadow: 0px 6px 15px #ff6600;
     margin: 2em;
     display: grid;
 }
 
-.divleft {
+<<<<<<< HEAD=======.divleft {
     grid-row: 1;
     grid-column: 1;
     max-width: 150px;
@@ -139,15 +191,16 @@ section {
     padding: 2em;
 }
 
+>>>>>>>1bd388dc41d8f57a8db386f02cdcde9c8dad8c1e
+
 /* Rodapé */
 footer {
     text-align: center;
     font-weight: bold;
-    margin: 30px auto;
-    background: #000; /* Preto puro */
+    background: #000;
     padding: 15px;
-    color: #cccccc; /* Texto cinza claro */
-    border-top: 3px solid #ff6600; /* Linha laranja */
+    color: #cccccc;
+    border-top: 3px solid #ff6600;
 }
 
 footer p {
@@ -159,24 +212,45 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra nas imagens */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra nas imagens */
     transition: transform 0.3s ease;
 }
 
 img:hover {
-    transform: scale(1.05); /* Efeito zoom ao passar o mouse */
+    transform: scale(1.2);
+    /* Efeito zoom ao passar o mouse */
 }
 
 /* Responsividade */
 @media (max-width: 750px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    .nav-left, .nav-right {
+    .nav-left,
+    .nav-right {
         flex: unset;
         max-width: 100%;
+    }
+
+    .nav-right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        background-color: #000;
+        padding: 15px 20px;
+    }
+
+    .nav-right.show {
+        display: flex;
     }
 
     article {
