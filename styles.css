@@ -17,7 +17,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background: linear-gradient(90deg, #000, #333); /* Preto com degradê */
+    background: #000; /* Preto com degradê */
     padding: 15px 0;
     border-bottom: 3px solid #ff6600; /* Destaque laranja */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
@@ -29,11 +29,11 @@ header {
 /* Navegação */
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     padding: 10px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */   
     border-radius: 15px;
 }
 
@@ -90,10 +90,10 @@ nav a:hover {
 article {
     max-width: 80%;
     margin: 20px auto;
-    background: linear-gradient(145deg, #333, #1a1a1a); /* Fundo cinza com degradê */
+    /* background: linear-gradient(145deg, #333, #1a1a1a);  Fundo cinza com degradê */
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6);
+    /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6); */
 }
 
 article h1 {
@@ -117,7 +117,11 @@ section p {
     line-height: 1.8;
     text-align: justify;
 }
-
+section {
+    background: #333;
+    border-radius: 25px;
+    padding: 3em;
+}
 /* Rodapé */
 footer {
     text-align: center;
