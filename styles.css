@@ -69,9 +69,9 @@ nav ul {
     display: flex;
 }
 
+/* Menu à esquerda (Logo)*/
 .nav-left {
     flex: 1;
-    /* Menu à esquerda */
     max-width: 15%;
 }
 
@@ -79,9 +79,9 @@ nav ul {
     max-height: 50px;
 }
 
+/* Menu à direita */
 .nav-right {
     flex: 2;
-    /* Menu à direita */
     justify-content: flex-end;
     gap: 20px;
     align-items: center;
@@ -155,8 +155,10 @@ article h1 {
 article h2 {
     text-align: center;
     font-size: 28px;
-    color: #f2f2f2;
-    /* Subtítulos em branco */
+    color: #ff6600;
+    /* Subtítulos em laranja */
+    /*color: #f2f2f2;
+     Subtítulos em branco */
     margin-bottom: 10px;
 }
 
@@ -177,11 +179,18 @@ section {
     display: grid;
 }
 
+section h3 {
+    text-align: center;
+    color: #ff6600;
+}
+
 .divleft {
     grid-row: 1;
     grid-column: 1;
-    max-width: 150px;
+    max-width: 250px;
     align-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .divright {
@@ -205,7 +214,19 @@ footer p {
 }
 
 /* Imagens */
+
 img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    max-height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.logo {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -214,7 +235,7 @@ img {
     transition: transform 0.3s ease;
 }
 
-img:hover {
+.logo:hover {
     transform: scale(1.2);
     /* Efeito zoom ao passar o mouse */
 }
@@ -264,6 +285,18 @@ img:hover {
 
     section p {
         font-size: 16px;
+    }
+
+    .divleft {
+        display: none;
+        margin-left: auto;
+        margin-left: auto;
+        max-width: 250px;
+    }
+    
+    .divright {
+        display: none;
+        padding: 2em;
     }
 
     footer {
