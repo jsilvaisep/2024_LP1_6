@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz AMD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f2f2f2;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        article {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6600;
+        }
+
+        .quiz-question {
+            margin-bottom: 20px;
+        }
+
+        .quiz-option {
+            margin: 10px 0;
+        }
+
+        .quiz-option label {
+            cursor: pointer;
+        }
+
+        .correct-answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .correct-answer.correct {
+            background-color: #4caf50; /* Verde para correto */
+            color: #fff;
+        }
+
+        .correct-answer.incorrect {
+            background-color: #f44336; /* Vermelho para incorreto */
+            color: #fff;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: #e65c00;
+        }
+
+        /* Mostrar a resposta correta/errada quando selecionado */
+        input[type="radio"]:checked + label + .correct-answer {
+            display: block;
+        }
+
+        /* Tornar os inputs de rádio mutuamente exclusivos */
+        input[type="radio"]:checked {
+            pointer-events: none; /* Desabilita o input após a seleção */
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Quiz AMD</h1>
+        <form>
+            <div class="quiz-question">
+                <p>1. Qual foi o primeiro processador x86 desenvolvido pela AMD?</p>
+                <div class="quiz-option">
+                    <input type="radio" id="q1a1" name="q1">
+                    <label for="q1a1">K6</label>
+                    <div class="correct-answer incorrect">Errado</div>
+                </div>
+                <div class="quiz-option">
+                    <input type="radio" id="q1a2" name="q1">
+                    <label for="q1a2">K5</label>
+                    <div class="correct-answer correct">Correto</div>
+                </div>
+                <div class="quiz-option">
+                    <input type="radio" id="q1a3" name="q1">
+                    <label for="q1a3">Athlon</label>
+                    <div class="correct-answer incorrect">Errado</div>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p>2. Qual arquitetura introduziu o suporte ao x86-64?</p>
+                <div class="quiz-option">
+                    <input type="radio" id="q2a1" name="q2">
+                    <label for="q2a1">K8</label>
+                    <div class="correct-answer correct">Correto</div>
+                </div>
+                <div class="quiz-option">
+                    <input type="radio" id="q2a2" name="q2">
+                    <label for="q2a2">Zen</label>
+                    <div class="correct-answer incorrect">Errado</div>
+                </div>
+                <div class="quiz-option">
+                    <input type="radio" id="q2a3" name="q2">
+                    <label for="q2a3">K7</label>
+                    <div class="correct-answer incorrect">Errado</div>
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p>3. Em que ano a AMD lançou a arquitetura Zen?</p>
+                <div class="quiz-option">
+                    <input type="radio" id="q3a1" name="q3">
+                    <label for="q3a1">2017</label>
+                    <div class="correct-answer correct">Correto</div>
+                </div>
+                <div class="quiz-option">
+                    <input type="radio" id="q3a2" name="q3">
+                    <label for="q3a2">2020</label>
+                    <div class="correct-answer incorrect">Errado</div>
+                </div>
+                <div class="quiz-option">
+                    <input type="radio" id="q3a3" name="q3">
+                    <label for="q3a3">2015</label>
+                    <div class="correct-answer incorrect">Errado</div>
+                </div>
+            </div>
+
+            <button type="submit">Verificar Respostas</button>
+        </form>
+    </article>
+</body>
+</html>
