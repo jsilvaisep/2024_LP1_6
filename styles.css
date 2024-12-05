@@ -1,95 +1,78 @@
-/* Reset básico */
+/* Remover todas os espaçõs dentro e fora da margem de todos os elemntos */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Definir conteudo do site como contentor flexivel */
+    flex-direction: column; /* Direção da organização dos elelmentos */
 }
-
+/* Propriedas do Main */
 main {
-    flex: 1;
-
+    flex: 1; /* Posição do main referente ao Contentor */
 }
 
-/* Corpo */
+/* Propriedades do Body */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1a;
-    /* Cinza escuro */
-    color: #f2f2f2;
-    /* Texto claro */
-    line-height: 1.8;
-    min-width: 350px;
-    overflow-x: hidden;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Roboto', sans-serif;/* Tipos de Letras a ser usados ordem esq para a direita */
+    background-color: #1a1a1a; /* Cinza escuro */
+    color: #f2f2f2;/* Texto claro */
+    line-height: 1.8;/* Altura linha */
+    min-width: 350px;/* Largura minima */
+    overflow-x: hidden;/* Se o conteudo saira dos limites, esconder conteudo */
 }
 
-body,
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-/* Cabeçalho */
+/* Propriedades Header */
 header {
-    background: linear-gradient(90deg, #000, #222);
-    padding: 15px 20px;
-    border-bottom: 3px solid #ff6600;
-    /* Destaque laranja */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: linear-gradient(90deg, #000, #222);/* Gradiente de 90g */
+    padding: 15px 20px; /* Espaço dentro da borda */
+    border-bottom: 3px solid #ff6600;/* Destaque laranja */    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Sombra preta 0 em x, 4 em y, 10 para espalhar*/
+    position: sticky; /* Manter a Nav Bar colada ao topo */
+    top: 0; /* Definir margem superior */
+    display: flex; /* Definir conteudo do site como contentor flexivel */
+    justify-content: space-between; /* Alinhar elementos */
+    align-items: center; /* Alinhar texto  */
 }
 
-/* Navegação */
+/* Propriedades da Nav Bar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border-radius: 15px;
-    width: 100%;
+    display: flex; /* Definir conteudo do site como contentor flexivel */
+    justify-content: space-between; /* Alinhar elementos */
+    align-items: center; /* Alinhar texto  */
+    padding: 10px 20px; /* Espaço dentro da borda */
+    border-radius: 15px; /* Fazer borda arredondada */
+    width: 100%; /* Largura que pode utilizar */
 }
-
+/* Propriedades da Lista desordenada */
 nav ul {
-    list-style-type: none;
-    display: flex;
+    list-style: none; /* Remover os Pontos */
+    display: flex; /* Definir conteudo do site como contentor flexivel */
 }
 
-/* Menu à esquerda (Logo)*/
+/* Propriedades Menu à esquerda (Logo) */
 .nav-left {
-    flex: 1;
-    max-width: 15%;
+    flex: 1; /* Posição do main referente ao Contentor */
+    max-width: 15%; /* Largura maxima que pode utilizar */
 }
-
+/* Propriedades Logo */
 .nav-left img {
-    max-height: 50px;
+    max-height: 50px; /* Altura maxima que pode utilizar */
 }
+/* FIM ----- Propriedades da Nav Bar */
 
 /* Menu à direita */
 .nav-right {
-    flex: 2;
-    justify-content: flex-end;
-    gap: 20px;
-    align-items: center;
+    flex: 2; /* Posição do main referente ao Contentor */
+    justify-content: flex-end; /* Alinhar elementos */
+    gap: 20px; /* Distancia entre elementos */
+    align-items: center; /* Alinhar texto */
 }
 
 .nav-right a {
-    color: #fff;
+    color: #fff; /* Cor do texto elementos */
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
@@ -241,8 +224,17 @@ figcaption {
     /* Efeito zoom ao passar o mouse */
 }
 
-/* Responsividade */
-@media only screen and (max-width: 1330px) {
+/* Tornar o site responsivo */
+
+@media only screen and (max-width: 1450px) {
+    nav {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 1200px) {
     nav ul {
         display: block;
         margin-right: 1em;
@@ -251,23 +243,34 @@ figcaption {
         max-width: 100%;
     }
     .nav-right {
-        text-align: right;
+        display: grid;
+        text-align: center;
     }
     nav li {
         float: none;
     }
-
+    nav ul li:last-child {
+        grid-column: 3;
+    }
     .divleft{
         grid-column: 1;
         grid-row: 1;
     }
-
     .divright {
         grid-column: 1;
         grid-row: 2;
     }
-
     section {
         margin: 0;
     }
-  }
+}
+@media only screen and (max-width: 1000px){
+    nav ul li:last-child {
+        grid-column: 2;
+    }
+}
+@media only screen and (max-width: 500px){
+    nav ul li:last-child {
+        grid-column: 1;
+    }
+}
