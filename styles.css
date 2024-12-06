@@ -224,6 +224,50 @@ figcaption {
     /* Efeito zoom ao passar o mouse */
 }
 
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-option {
+    margin: 10px 0;
+}
+
+.quiz-option label {
+    cursor: pointer;
+}
+
+.correct-answer {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.correct-answer.correct {
+    background-color: #4caf50; /* Verde para correto */
+    color: #fff;
+}
+
+.correct-answer.incorrect {
+    background-color: #f44336; /* Vermelho para incorreto */
+    color: #fff;
+}
+
+/* Mostrar a resposta correta/errada quando selecionado */
+input[type="radio"]:checked + label + .correct-answer {
+    display: block;
+}
+
+/* Tornar os inputs de rádio mutuamente exclusivos */
+input[type="radio"]:disabled {
+    pointer-events: none; /* Desabilita o input após a seleção */
+    
+}
+input[type="radio"]:disabled {
+    background: dimgray;
+}
+
 /* Tornar o site responsivo */
 
 @media only screen and (max-width: 1450px) {
@@ -232,6 +276,7 @@ figcaption {
         margin-left: auto;
         margin-right: auto;
         padding: 5px;
+        
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -270,6 +315,12 @@ figcaption {
     }
 }
 @media only screen and (max-width: 500px){
+    nav {
+        display: block;
+    }
+    .nav-right {
+        display: block;
+    }
     nav ul li:last-child {
         grid-column: 1;
     }
