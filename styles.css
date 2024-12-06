@@ -224,18 +224,6 @@ figcaption {
     /* Efeito zoom ao passar o mouse */
 }
 
-.quiz-question {
-    margin-bottom: 20px;
-}
-
-.quiz-option {
-    margin: 10px 0;
-}
-
-.quiz-option label {
-    cursor: pointer;
-}
-
 .correct-answer {
     display: none;
     margin-top: 10px;
@@ -260,12 +248,10 @@ input[type="radio"]:checked + label + .correct-answer {
 }
 
 /* Tornar os inputs de rádio mutuamente exclusivos */
-input[type="radio"]:disabled {
-    pointer-events: none; /* Desabilita o input após a seleção */
-    
-}
-input[type="radio"]:disabled {
-    background: dimgray;
+section:has(input[type="radio"]:checked) input[type="radio"] {
+    pointer-events: none; /* Impede a interação */
+    opacity: 0.5; /* Visualmente desabilitado */
+    cursor: not-allowed; /* Cursor de "não permitido" */
 }
 
 /* Tornar o site responsivo */
