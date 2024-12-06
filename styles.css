@@ -120,7 +120,7 @@ nav a:hover {
 
 /* Conteúdo principal */
 article {
-    max-width: 80%;
+    max-width: 60%;
     margin: 20px auto;
     /* background: linear-gradient(145deg, #333, #1a1a1a);  Fundo cinza com degradê */
     padding: 30px;
@@ -146,6 +146,10 @@ article h2 {
     margin-bottom: 10px;
 }
 
+strong {
+    color: #ff6600;
+}
+
 section p {
     font-size: 18px;
     color: #cccccc;
@@ -159,7 +163,7 @@ section {
     border-radius: 25px;
     padding: 3em;
     box-shadow: 0px 6px 15px #ff6600;
-    margin: 2em;
+    margin: 1em;
     display: grid;
 }
 
@@ -223,10 +227,13 @@ figcaption {
     transform: scale(1.2);
     /* Efeito zoom ao passar o mouse */
 }
-
+#quiz {
+    max-width: 40%;
+}
 .correct-answer {
     display: none;
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
@@ -264,7 +271,7 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
         padding: 5px; 
     }
 }
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     nav ul {
         display: block;
         margin-right: 1em;
@@ -288,6 +295,9 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
     }
 }
 @media (max-width: 1000px){
+    section {
+        display: block;
+    }
 
     nav ul li:last-child {
         grid-column: 2;
@@ -297,6 +307,17 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
 
     nav ul li:last-child {
         grid-column: 1;
+    }
+    #quiz {
+        max-width: 80%;
+    }
+
+    article {
+        max-width: 90%;
+    }
+
+    section {
+        padding: 1em;
     }
 }
 
