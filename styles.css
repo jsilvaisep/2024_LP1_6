@@ -61,7 +61,7 @@ nav ul {
 .nav-left img {
     max-height: 50px; /* Altura maxima que pode utilizar */
 }
-/* FIM ----- Propriedades da Nav Bar */
+
 
 /* Menu à direita */
 .nav-right {
@@ -117,6 +117,7 @@ nav a:hover {
     background-color: #ff6600;
     color: #000;
 }
+/* FIM ----- Propriedades da Nav Bar */
 
 /* Conteúdo principal */
 article {
@@ -322,6 +323,10 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
 }
 
 @media (max-width: 500px){
+    header {
+        background: linear-gradient(180deg, #000, #222);/* Gradiente de 90g */
+        position:relative;
+    }
     nav {
         display: block;
     }
