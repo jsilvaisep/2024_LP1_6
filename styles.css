@@ -6,6 +6,7 @@
 
 html,
 body {
+    height: 100%;
     display: flex; /* Definir conteudo do site como contentor flexivel */
     flex-direction: column; /* Direção da organização dos elelmentos */
 }
@@ -27,15 +28,15 @@ body {
 /* Propriedades Header */
 header {
     background: linear-gradient(90deg, #000, #222);/* Gradiente de 90g */
-    padding: 15px 20px; /* Espaço dentro da borda */
-    border-bottom: 3px solid #ff6600;/* Destaque laranja */    
+    padding: 10px 20px; /* Espaço dentro da borda */
+    border-bottom: 3px solid #ff6600;/* Destaque laranja */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Sombra preta 0 em x, 4 em y, 10 para espalhar*/
     position: sticky; /* Manter a Nav Bar colada ao topo */
     top: 0; /* Definir margem superior */
     display: flex; /* Definir conteudo do site como contentor flexivel */
     justify-content: space-between; /* Alinhar elementos */
     align-items: center; /* Alinhar texto  */
-    
+
 }
 
 /* Propriedades da Nav Bar */
@@ -51,6 +52,8 @@ nav {
 nav ul {
     list-style: none; /* Remover os Pontos */
     display: flex; /* Definir conteudo do site como contentor flexivel */
+    margin: 0;
+    padding: 0;
 }
 
 /* Propriedades Menu à esquerda (Logo) */
@@ -84,11 +87,19 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0.5em;
+    margin: 0 15px;
 }
 
 nav ul li:last-child {
     margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevent text wrapping */
 }
 
 nav a {
@@ -191,6 +202,7 @@ section h3 {
 
 /* Rodapé */
 footer {
+    margin-top: auto;
     text-align: center;
     font-weight: bold;
     background: #000;
@@ -270,13 +282,30 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
 
 /* Tornar o site responsivo */
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1600px) {
     nav {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        padding: 5px; 
+        padding: 5px;
     }
+
+          nav ul {
+              flex-wrap: wrap;
+              /* Allow wrapping if necessary */
+              justify-content: center;
+              /* Center items */
+          }
+
+          nav ul li {
+              margin: 5px 10px;
+              /* Reduce spacing */
+          }
+
+          header .logo img {
+              height: 30px;
+              /* Reduce logo size */
+          }
 }
 @media (max-width: 1200px) {
     nav ul {
@@ -328,13 +357,13 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 480px){
     header {
         background: linear-gradient(180deg, #000, #222);/* Gradiente de 90g */
         position:relative;
     }
     nav {
-        display: block;
+        display: none;
     }
     .nav-right {
         display: block;
