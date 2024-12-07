@@ -35,6 +35,7 @@ header {
     display: flex; /* Definir conteudo do site como contentor flexivel */
     justify-content: space-between; /* Alinhar elementos */
     align-items: center; /* Alinhar texto  */
+    
 }
 
 /* Propriedades da Nav Bar */
@@ -225,12 +226,17 @@ figcaption {
 }
 
 .logo:hover {
-    transform: scale(1.2);
-    /* Efeito zoom ao passar o mouse */
+    transform: scale(1.2); /* Efeito zoom ao passar o mouse */
 }
+
 #quiz {
     max-width: 40%;
 }
+
+#quiz input {
+    cursor: pointer;
+}
+
 .correct-answer {
     display: none;
     margin-top: 10px;
@@ -258,7 +264,7 @@ input[type="radio"]:checked + label + .correct-answer {
 /* Tornar os inputs de rádio mutuamente exclusivos */
 section:has(input[type="radio"]:checked) input[type="radio"] {
     pointer-events: none; /* Impede a interação */
-    opacity: 0.5; /* Visualmente desabilitado */
+    /* opacity: 0.5;  Visualmente desabilitado -- Tentar resolver este Easter EGG :) */
     cursor: not-allowed; /* Cursor de "não permitido" */
 }
 
