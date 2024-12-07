@@ -264,7 +264,7 @@ input[type="radio"]:checked + label + .correct-answer {
 /* Tornar os inputs de rádio mutuamente exclusivos */
 section:has(input[type="radio"]:checked) input[type="radio"] {
     pointer-events: none; /* Impede a interação */
-    /* opacity: 0.5;  Visualmente desabilitado -- Tentar resolver este Easter EGG :) */
+    opacity: 0;  /* torna so input invisiveis */
     cursor: not-allowed; /* Cursor de "não permitido" */
 }
 
