@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joaquim Silva, Peter Oliveira, Rui Maia, Hassen Leandro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>AMD - Início</title>
+</head>
+<style>
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox para o body */
+html,
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Propriedades do Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    line-height: 1.8;
+    min-width: 350px;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #000, #222);
+    padding: 15px 20px;
+    border-bottom: 3px solid #ff6600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo */
+.nav-left img {
+    max-height: 50px;
+}
+
+/* Menu à direita */
+.nav-right {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+/* Itens do menu */
+.nav-right li {
+    margin: 0.5em;
+}
+
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-right a:hover {
+    background-color: #ff6600;
+    color: #000;
+}
+
+/* Menu hambúrguer */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+}
+
+/* Mostrar/ocultar o menu dependendo do checkbox */
+#menu-toggle {
+    display: none; /* Escondendo o checkbox */
+}
+
+.nav-right {
+    display: block; /* Esconde o menu por padrão */
+}
+
+/* Mostrar menu quando o checkbox for marcado */
+#menu-toggle:checked + .menu-icon + .nav-right {
+    display: block;
+}
+
+/* Tornar o site responsivo */
+@media (max-width: 500px) {
+    .nav-right {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .menu-icon {
+        display: flex; /* Exibindo o menu hambúrguer */
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-right {
+        display: block;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="index.html" class="custom-button"><img class="logo" src="images/amd.png" alt="Logotipo da AMD"></a></li>
+            </ul>
+            <!-- Colocar o checkbox dentro do nav e ajustado ao final -->
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
+            <ul class="nav-right">
+                <li><a href="inicio.html">Início da AMD</a></li>
+                <li><a href="anos90.html">Década de 1990</a></li>
+                <li><a href="anos2000.html">Anos 2000</a></li>
+                <li><a href="actual.html">Arquitetura Zen</a></li>
+                <li><a href="inovacoes.html">Inovações Tecnológicas</a></li>
+                <li><a href="mercado.html">Mercado Atual</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="home">
+            <h1>História dos Processadores AMD</h1>
+            <h2>Introdução aos Processadores AMD</h2>
+            <section>
+                <p>A <strong>AMD</strong> (Advanced Micro Devices) é uma das empresas líderes no mercado de processadores e placas gráficas,
+                   alimentando computadores, servidores e consolas. Compete diretamente com gigantes como <strong>Intel</strong> e <strong>NVIDIA</strong>, e,
+                   embora nem sempre tenha liderado em participação no mercado, ganhou destaque nos últimos anos graças à inovação dos processadores
+                   <strong>Ryzen</strong> e <strong>EPYC</strong>, que combinam alta performance e eficiência energética face aos processadores <strong>Intel</strong>.
+                   No segmento das placas gráficas, a linha <strong>RADEON</strong> é a principal concorrente das placas <strong>GeForce</strong> da <strong>NVIDIA</strong>.</p>
+            </section>
+            <br>
+            <section>
+                <p>Ao longo das décadas, a <strong>AMD</strong> tem-se destacado pela inovação no design dos seus processadores, oferecendo desempenho elevado a preços
+                   mais acessíveis. Esta abordagem fez da empresa uma referência na indústria de hardware, com presença tanto no mercado doméstico como em soluções empresariais.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024/2025 Grupo 6 - Projeto 1 - LP1. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

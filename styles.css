@@ -268,6 +268,24 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
     cursor: not-allowed; /* Cursor de "não permitido" */
 }
 
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    justify-content: space-between;
+}
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+}
+#menu-toggle:checked + .menu-icon + .nav-right {
+    display: block;
+}
+
 /* Tornar o site responsivo */
 
 @media only screen and (max-width: 1450px) {
@@ -328,15 +346,26 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
     }
 }
 
-@media (max-width: 500px){
-    header {
-        background: linear-gradient(180deg, #000, #222);/* Gradiente de 90g */
-        position:relative;
-    }
-    nav {
-        display: block;
-    }
+@media (max-width: 500px) {
     .nav-right {
+        display: none; /* Escondendo o menu à direita */
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .menu-icon {
+        display: flex; /* Exibindo o menu hambúrguer */
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-right {
         display: block;
     }
+
+
 }
+
+#menu-toggle {
+    display: none;
+}
+
