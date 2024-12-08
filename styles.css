@@ -8,10 +8,13 @@ html,
 body {
     display: flex; /* Definir conteudo do site como contentor flexivel */
     flex-direction: column; /* Direção da organização dos elelmentos */
+    min-height: 100vh; /* Body usa toda a altura */
 }
 /* Propriedas do Main */
 main {
     flex: 1; /* Posição do main referente ao Contentor */
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
 }
 
 /* Propriedades do Body */
@@ -63,6 +66,20 @@ nav ul {
     max-height: 50px; /* Altura maxima que pode utilizar */
 }
 
+ul { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #cccccc;
+}
+
+.ul-inovacoes {
+    color: #cccccc;
+    margin: 15px 0;
+    line-height: 1.8;
+    text-align: justify;
+    padding-left: 40px;
+    margin:0;
+}
 
 /* Menu à direita */
 .nav-right {
@@ -128,6 +145,7 @@ article {
     padding: 30px;
     border-radius: 15px;
     /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6); */
+    background: linear-gradient(145deg, #333, #1a1a1a);
 }
 
 article h1 {
@@ -152,6 +170,17 @@ strong {
     color: #ff6600;
 }
 
+section {
+    background: #333;
+    border-radius: 25px;
+    padding: 3em;
+    box-shadow: 0px 6px 15px #ff6600;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em; /* Espaço entre os blocos */
+}
+
 section p {
     font-size: 18px;
     color: #cccccc;
@@ -160,34 +189,33 @@ section p {
     text-align: justify;
 }
 
-section {
-    background: #333;
-    border-radius: 25px;
-    padding: 3em;
-    box-shadow: 0px 6px 15px #ff6600;
-    margin: 1em;
-    display: grid;
-}
-
 section h3 {
     text-align: center;
     color: #ff6600;
 }
 
-.divleft {
-    grid-row: 1;
-    grid-column: 1;
-    max-width: 250px;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
+.block {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    gap: 1em; /* Espaço entre imagem e texto */
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
-.divright {
-    grid-column: 2;
-    grid-row: 1;
-    padding: 2em;
+.block img {
+    width: 350px; /* Define largura da imagem */
+    height: auto; /* Mantém proporção */
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
+
+.block p {
+    margin: 0;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
 
 /* Rodapé */
 footer {
@@ -286,6 +314,50 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
     display: block;
 }
 
+/* Block layout for each part of timeline */
+.timeline-block {
+    display: flex;
+    align-items: center;
+    gap: 1em; /* Espaço entre imagem e texto */
+    text-align: left;
+}
+
+/* Image styling in blocks */
+.timeline-block img {
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Timeline on the right side */
+aside.timeline {
+    flex: 1 1 30%; /* Make the timeline take 30% of space */
+    background: #f4f4f4;
+    padding: 10px;
+    position: sticky;
+    top: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+/* Timeline links */
+aside.timeline ul {
+    list-style: none;
+}
+
+aside.timeline ul li {
+    margin-bottom: 10px;
+}
+
+aside.timeline ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+aside.timeline ul li a:hover {
+    color: #007bff;
+}
+
 /* Tornar o site responsivo */
 
 @media only screen and (max-width: 1450px) {
@@ -326,6 +398,10 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
 
     nav ul li:last-child {
         grid-column: 2;
+    }
+
+    .timeline-block {
+        flex-direction: column; /* Stack blocks vertically */
     }
 }
 @media (max-width: 700px){
@@ -368,4 +444,3 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
 #menu-toggle {
     display: none;
 }
-
