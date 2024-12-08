@@ -122,7 +122,7 @@ nav a:hover {
 
 /* Conteúdo principal */
 article {
-    max-width: 60%;
+    max-width: 80%;
     margin: 20px auto;
     /* background: linear-gradient(145deg, #333, #1a1a1a);  Fundo cinza com degradê */
     padding: 30px;
