@@ -70,7 +70,7 @@ nav ul {
 }
 
 /* Estilos gerais para as listas */
-ul { 
+ul {
     font-family: 'Roboto', sans-serif; /* Define a fonte como 'Roboto' para os itens da lista */
     font-size: 18px; /* Tamanho da fonte dos itens da lista */
     color: #cccccc; /* Cor cinza claro para o texto da lista */
@@ -324,7 +324,7 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
 .menu-icon div {
     width: 30px; /* Define a largura das barras */
     height: 4px; /* Define a altura das barras */
-    background-color: white; /* Cor branca para as barras */
+    background-color: #f44336; /* Cor branca para as barras */
 }
 
 /* Exibe o menu quando o checkbox está marcado */
@@ -360,7 +360,7 @@ aside.timeline {
     left: 5px; /* Posiciona à esquerda */
     top: 50%; /* Posiciona ao meio verticalmente */
     overflow-y: auto; /* Permite o scroll vertical */
-    
+
 }
 
 /* Estilo para os links da linha do tempo */
@@ -390,50 +390,75 @@ aside.timeline ul li a:hover {
     color: #000; /* Cor do texto preta no hover */
 }
 
-
-/* Tornar o site responsivo */
-
-/* Quando a largura do monitor for inferior a 1450px */
-@media only screen and (max-width: 1450px) {
-    nav {
-        text-align: center; /* Alinha o conteúdo do nav ao centro */
-        margin-left: auto; /* Centraliza o nav com margens automáticas */
-        margin-right: auto; /* Centraliza o nav com margens automáticas */
-        padding: 5px; /* Reduz o padding para ajustar o conteúdo */
-    }
+/* Menu Icon Styles */
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Quando a largura do monitor for inferior a 1200px */
-@media (max-width: 1200px) {
-    nav ul {
-        display: block; /* Exibe a lista de navegação em bloco (empilhado) */
-        margin-right: 1em; /* Adiciona uma margem à direita */
-    }
-    .nav-left {
-        max-width: 100%; /* Ajusta a largura máxima da logo para 100% */
-    }
-    .nav-right {
-        display: grid; /* Exibe os itens da nav-right em formato de grid */
-        text-align: center; /* Alinha o conteúdo da nav-right ao centro */
-    }
-    nav li {
-        float: none; /* Impede que os itens da lista flutuem */
-    }
-    nav ul li:last-child {
-        grid-column: 3; /* Coloca o último item da lista na terceira coluna */
-    }
+.menu-icon div {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
 
-    section {
-        margin: 0; /* Remove a margem das seções */
-    }
-} 
+/* Hidden Checkbox */
+#menu-toggle {
+    display: none;
+}
 
-/* Quando a largura do monitor for inferior a 500px */
-@media (max-width: /*600px*/ 1000px) {
-    header {
-        background: linear-gradient(180deg, #000, #222); /* Altera a direção do gradiente no header */
-    }
-    
+/* Dropdown Menu */
+.menu {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show Menu on Checkbox Toggle */
+#menu-toggle:checked~.menu {
+    display: block;
+}
+
+/* Animate Menu Icon */
+#menu-toggle:checked+.menu-icon div:nth-child(1) {
+    transform: rotate(45deg) translate(0px, 0px);
+}
+
+#menu-toggle:checked+.menu-icon div:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked+.menu-icon div:nth-child(3) {
+    transform: rotate(-45deg) translate(17px, -17px);
+}
+
+/* Quando a largura do monitor for inferior a 1024px */
+@media (max-width: /*600px*/ 1024px) {
+
     .nav-right {
         display: none; /* Esconde a navegação à direita */
         width: 100%; /* Ocupa toda a largura disponível */
@@ -447,14 +472,16 @@ aside.timeline ul li a:hover {
     #menu-toggle:checked + .menu-icon + .nav-right {
         display: block; /* Exibe a navegação quando o menu hamburguer for ativado */
     }
+
     .block {
         display: block; /* Exibe os blocos como elementos de bloco */
         text-align: center; /* Centraliza o texto dentro dos blocos */
     }
+
     .block img {
         max-width: 250px;
     }
-    
+
     #quiz {
         max-width: 80%; /* Limita a largura máxima do quiz para 80% */
     }
@@ -470,10 +497,12 @@ aside.timeline ul li a:hover {
     aside li{
         float: left;
     }
+
     aside ul {
         top: 0;
         position: fixed;
     }
+
     aside.timeline ul li a {
         padding: 5px;
         font-size: 0.8em;
@@ -482,5 +511,5 @@ aside.timeline ul li a:hover {
 
 /* Esconde o checkbox que controla o menu hamburguer */
 #menu-toggle {
-    display: none; 
+    display: none;
 }
