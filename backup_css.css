@@ -1,5 +1,5 @@
 /* Quando a largura do monitor for inferior a 1000px */
-/* @media (max-width: 1000px){
+@media (max-width: 1000px){
     section {
         display: block; /* Exibe as seções em formato de bloco */
     }

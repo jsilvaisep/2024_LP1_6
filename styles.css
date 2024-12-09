@@ -447,6 +447,25 @@ aside.timeline ul li a:hover {
     #menu-toggle:checked + .menu-icon + .nav-right {
         display: block; /* Exibe a navegação quando o menu hamburguer for ativado */
     }
+    .block {
+        display: block; /* Exibe os blocos como elementos de bloco */
+        text-align: center; /* Centraliza o texto dentro dos blocos */
+    }
+    .block img {
+        max-width: 250px;
+    }
+    
+    #quiz {
+        max-width: 80%; /* Limita a largura máxima do quiz para 80% */
+    }
+
+    article {
+        max-width: 90%; /* Ajusta a largura máxima do artigo para 90% */
+    }
+
+    section {
+        padding: 1em; /* Diminui o preenchimento das seções */
+    }
 
     aside li{
         float: left;
