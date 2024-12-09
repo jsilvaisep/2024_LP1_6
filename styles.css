@@ -429,7 +429,8 @@ aside.timeline ul li a:hover {
 
 /* Animate Menu Icon */
 #menu-toggle:checked+.menu-icon div:nth-child(1) {
-    transform: rotate(45deg) translate(0px, 0px);
+    transform: rotate(45deg) translate(1px, 17px);
+    margin-left:12px;
 }
 
 #menu-toggle:checked+.menu-icon div:nth-child(2) {
@@ -437,7 +438,8 @@ aside.timeline ul li a:hover {
 }
 
 #menu-toggle:checked+.menu-icon div:nth-child(3) {
-    transform: rotate(-45deg) translate(17px, -17px);
+    transform: rotate(-45deg) translate(0px, -18px);
+    margin-left: 12px;
 }
 
 /* Quando a largura do monitor for inferior a 1024px */
