@@ -8,7 +8,7 @@ html,
 body {
     display: flex; /* Define o conteúdo do site como um container flexível */
     flex-direction: column; /* Organiza os elementos de forma vertical (em coluna) */
-    min-height: 100vh;
+    scroll-padding-top: 225px;
 }
 
 /* Propriedades do Main */
@@ -401,6 +401,9 @@ aside.timeline ul li a:hover {
         margin-right: auto; /* Centraliza o nav com margens automáticas */
         padding: 5px; /* Reduz o padding para ajustar o conteúdo */
     }
+    body {
+        scroll-padding-top: 265px;
+    }
 }
 
 /* Quando a largura do monitor for inferior a 1200px */
@@ -426,6 +429,9 @@ aside.timeline ul li a:hover {
     section {
         margin: 0; /* Remove a margem das seções */
     }
+    body {
+        scroll-padding-top: 450px;
+    }
 }
 
 /* Quando a largura do monitor for inferior a 1000px */
@@ -440,6 +446,9 @@ aside.timeline ul li a:hover {
 
     .timeline-block {
         flex-direction: column; /* Empilha os blocos da linha do tempo verticalmente */
+    }
+    body {
+        scroll-padding-top: 950px;
     }
 }
 
@@ -474,7 +483,9 @@ aside.timeline ul li a:hover {
         top: 300px;
         position: fixed;
     }
-
+    body {
+        scroll-padding-top: 5000px;
+    }
 }
 
 /* Quando a largura do monitor for inferior a 500px */
