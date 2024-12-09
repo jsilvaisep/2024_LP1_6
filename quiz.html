@@ -1,253 +1,276 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Joaquim Silva, Peter Oliveira, Rui Maia, Hassen Leandro">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto académico sobre a história dos microprocessadores da AMD.">
-    <meta name="keywords" content="AMD, microprocessadores, Ryzen, história da AMD">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-    <title>Quiz AMD</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="nav-left">
-                <li><a href="index.html" class="custom-button"><img class="logo" src="images/amd.png" alt="Logotipo da AMD"></a></li>
-            </ul>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
-            <ul class="nav-right">
-                <li><a href="historia.html">História</a></li>
-                <li><a href="inovacoes.html">Inovações Tecnológicas</a></li>
-                <li><a href="mercado.html">Mercado Atual</a></li>
-                <li><a href="quiz.html" class="active">Quiz</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article id="quiz">
-            <h2>Quiz AMD</h2>
-            
-            <!-- Pergunta 1 -->
-            <section class="quiz-question">
-                <p>1. Qual foi o primeiro processador x86 desenvolvido pela AMD?</p>
-                <div>
-                    <input type="radio" id="q1a1" name="q1">
-                    <label>K6</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-                <div>
-                    <input type="radio" id="q1a2" name="q1">
-                    <label>K5</label>
-                    <div class="correct-answer correct">Correto</div>
-                </div>
-                <div>
-                    <input type="radio" id="q1a3" name="q1">
-                    <label>Athlon</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-            </section>
-            <br>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Joaquim Silva, Peter Oliveira, Rui Maia, Hassen Leandro" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Projeto académico sobre a história dos microprocessadores da AMD." />
+        <meta name="keywords" content="AMD, microprocessadores, Ryzen, história da AMD" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+        <title>Quiz AMD</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-left">
+                    <li><a href="index.html" class="custom-button"><img class="logo" src="images/amd.png" alt="Logotipo da AMD"/></a></li>
+                </ul>
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <ul class="nav-right menu">
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="inovacoes.html">Inovações Tecnológicas</a></li>
+                    <li><a href="mercado.html">Mercado Atual</a></li>
+                    <li><a href="quiz.html" class="active">Quiz</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article id="quiz">
+                <h2>Quiz AMD</h2>
 
-            <!-- Pergunta 2 -->
-            <section class="quiz-question">
-                <p>2. Qual arquitetura introduziu o suporte ao x86-64?</p>
-                <div>
-                    <input type="radio" id="q2a1" name="q2">
-                    <label>K8</label>
-                    <div class="correct-answer correct">Correto</div>
-                </div>
-                <div>
-                    <input type="radio" id="q2a2" name="q2">
-                    <label>Zen</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-                <div>
-                    <input type="radio" id="q2a3" name="q2">
-                    <label>K7</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-            </section>
-            <br>
+                <!-- Pergunta 1 -->
+                <section class="quiz-question">
+                    <p>
+                        1. Qual foi o primeiro processador x86 desenvolvido pela
+                        AMD?
+                    </p>
+                    <div>
+                        <input type="radio" id="q1a1" name="q1" />
+                        <label>K6</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q1a2" name="q1" />
+                        <label>K5</label>
+                        <div class="correct-answer correct">Correto</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q1a3" name="q1" />
+                        <label>Athlon</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                </section>
+                <br />
 
-            <!-- Pergunta 3 -->
-            <section class="quiz-question">
-                <p>3. Em que ano a AMD lançou a arquitetura Zen?</p>
-                <div>
-                    <input type="radio" id="q3a1" name="q3">
-                    <label>2017</label>
-                    <div class="correct-answer correct">Correto</div>
-                </div>
-                <div>
-                    <input type="radio" id="q3a2" name="q3">
-                    <label>2020</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-                <div>
-                    <input type="radio" id="q3a3" name="q3">
-                    <label>2015</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-            </section>
-            <br>
+                <!-- Pergunta 2 -->
+                <section class="quiz-question">
+                    <p>2. Qual arquitetura introduziu o suporte ao x86-64?</p>
+                    <div>
+                        <input type="radio" id="q2a1" name="q2" />
+                        <label>K8</label>
+                        <div class="correct-answer correct">Correto</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q2a2" name="q2" />
+                        <label>Zen</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q2a3" name="q2" />
+                        <label>K7</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                </section>
+                <br />
 
-            <!-- Pergunta 4 -->
-            <section class="quiz-question">
-                <p>4. Qual processador marcou a entrada da AMD no mercado?</p>
-                <div>
-                    <input type="radio" id="q4a1" name="q4">
-                    <label>AM9080</label>
-                    <div class="correct-answer correct">Correto</div>
-                </div>
-                <div>
-                    <input type="radio" id="q4a2" name="q4">
-                    <label>AM386</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-                <div>
-                    <input type="radio" id="q4a3" name="q4">
-                    <label>Athlon</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-            </section>
-            <br>
+                <!-- Pergunta 3 -->
+                <section class="quiz-question">
+                    <p>3. Em que ano a AMD lançou a arquitetura Zen?</p>
+                    <div>
+                        <input type="radio" id="q3a1" name="q3" />
+                        <label>2017</label>
+                        <div class="correct-answer correct">Correto</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q3a2" name="q3" />
+                        <label>2020</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q3a3" name="q3" />
+                        <label>2015</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                </section>
+                <br />
 
-            <!-- Pergunta 5 -->
-            <section class="quiz-question">
-                <p>5. Qual foi o processador da AMD lançado em 1999 que desafiou os chips da Intel?</p>
-                <div>
-                    <input type="radio" id="q5a1" name="q5">
-                    <label>K6</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-                <div>
-                    <input type="radio" id="q5a2" name="q5">
-                    <label>Athlon</label>
-                    <div class="correct-answer correct">Correto</div>
-                </div>
-                <div>
-                    <input type="radio" id="q5a3" name="q5">
-                    <label>Ryzen</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-            </section>
-            <br>
+                <!-- Pergunta 4 -->
+                <section class="quiz-question">
+                    <p>
+                        4. Qual processador marcou a entrada da AMD no mercado?
+                    </p>
+                    <div>
+                        <input type="radio" id="q4a1" name="q4" />
+                        <label>AM9080</label>
+                        <div class="correct-answer correct">Correto</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q4a2" name="q4" />
+                        <label>AM386</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q4a3" name="q4" />
+                        <label>Athlon</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                </section>
+                <br />
 
-            <!-- Pergunta 6 -->
-            <section class="quiz-question">
-                <p>6. Qual arquitetura introduziu a tecnologia Infinity Fabric?</p>
-                <div>
-                    <input type="radio" id="q6a1" name="q6">
-                    <label>Zen</label>
-                    <div class="correct-answer correct">Correto</div>
-                </div>
-                <div>
-                    <input type="radio" id="q6a2" name="q6">
-                    <label>K10</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-                <div>
-                    <input type="radio" id="q6a3" name="q6">
-                    <label>Bulldozer</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-            </section>
-            <br>
+                <!-- Pergunta 5 -->
+                <section class="quiz-question">
+                    <p>
+                        5. Qual foi o processador da AMD lançado em 1999 que
+                        desafiou os chips da Intel?
+                    </p>
+                    <div>
+                        <input type="radio" id="q5a1" name="q5" />
+                        <label>K6</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q5a2" name="q5" />
+                        <label>Athlon</label>
+                        <div class="correct-answer correct">Correto</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q5a3" name="q5" />
+                        <label>Ryzen</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                </section>
+                <br />
 
-            <!-- Pergunta 7 -->
-            <section class="quiz-question">
-                <p>7. Qual foi a primeira GPU produzida pela AMD após adquirir a ATI?</p>
-                <div>
-                    <input type="radio" id="q7a1" name="q7">
-                    <label>Radeon HD 2000</label>
-                    <div class="correct-answer correct">Correto</div>
-                </div>
-                <div>
-                    <input type="radio" id="q7a2" name="q7">
-                    <label>Radeon HD 4000</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-                <div>
-                    <input type="radio" id="q7a3" name="q7">
-                    <label>Vega</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-            </section>
-            <br>
+                <!-- Pergunta 6 -->
+                <section class="quiz-question">
+                    <p>
+                        6. Qual arquitetura introduziu a tecnologia Infinity
+                        Fabric?
+                    </p>
+                    <div>
+                        <input type="radio" id="q6a1" name="q6" />
+                        <label>Zen</label>
+                        <div class="correct-answer correct">Correto</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q6a2" name="q6" />
+                        <label>K10</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q6a3" name="q6" />
+                        <label>Bulldozer</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                </section>
+                <br />
 
-            <!-- Pergunta 8 -->
-            <section class="quiz-question">
-                <p>8. Qual linha de processadores AMD é voltada para servidores?</p>
-                <div>
-                    <input type="radio" id="q8a1" name="q8">
-                    <label>Ryzen</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-                <div>
-                    <input type="radio" id="q8a2" name="q8">
-                    <label>EPYC</label>
-                    <div class="correct-answer correct">Correto</div>
-                </div>
-                <div>
-                    <input type="radio" id="q8a3" name="q8">
-                    <label>Threadripper</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-            </section>
-            <br>
+                <!-- Pergunta 7 -->
+                <section class="quiz-question">
+                    <p>
+                        7. Qual foi a primeira GPU produzida pela AMD após
+                        adquirir a ATI?
+                    </p>
+                    <div>
+                        <input type="radio" id="q7a1" name="q7" />
+                        <label>Radeon HD 2000</label>
+                        <div class="correct-answer correct">Correto</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q7a2" name="q7" />
+                        <label>Radeon HD 4000</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q7a3" name="q7" />
+                        <label>Vega</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                </section>
+                <br />
 
-            <!-- Pergunta 9 -->
-            <section class="quiz-question">
-                <p>9. Em que ano a AMD adquiriu a ATI Technologies?</p>
-                <div>
-                    <input type="radio" id="q9a1" name="q9">
-                    <label>2005</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-                <div>
-                    <input type="radio" id="q9a2" name="q9">
-                    <label>2006</label>
-                    <div class="correct-answer correct">Correto</div>
-                </div>
-                <div>
-                    <input type="radio" id="q9a3" name="q9">
-                    <label>2007</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-            </section>
-            <br>
+                <!-- Pergunta 8 -->
+                <section class="quiz-question">
+                    <p>
+                        8. Qual linha de processadores AMD é voltada para
+                        servidores?
+                    </p>
+                    <div>
+                        <input type="radio" id="q8a1" name="q8" />
+                        <label>Ryzen</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q8a2" name="q8" />
+                        <label>EPYC</label>
+                        <div class="correct-answer correct">Correto</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q8a3" name="q8" />
+                        <label>Threadripper</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                </section>
+                <br />
 
-            <!-- Pergunta 10 -->
-            <section class="quiz-question">
-                <p>10. Qual processador Ryzen foi o primeiro com 16 núcleos?</p>
-                <div>
-                    <input type="radio" id="q10a1" name="q10">
-                    <label>Ryzen 7 1700</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-                <div>
-                    <input type="radio" id="q10a2" name="q10">
-                    <label>Ryzen Threadripper 1950X</label>
-                    <div class="correct-answer correct">Correto</div>
-                </div>
-                <div>
-                    <input type="radio" id="q10a3" name="q10">
-                    <label>Ryzen 9 3950X</label>
-                    <div class="correct-answer incorrect">Errado</div>
-                </div>
-            </section>
-            <br>
-        </article>
-    </main>
-    <footer>
-        <p>&copy; 2024/2025 Grupo 6 - Projeto 1 - LP1. Todos os direitos reservados.</p>
-    </footer>
-</body>
+                <!-- Pergunta 9 -->
+                <section class="quiz-question">
+                    <p>9. Em que ano a AMD adquiriu a ATI Technologies?</p>
+                    <div>
+                        <input type="radio" id="q9a1" name="q9" />
+                        <label>2005</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q9a2" name="q9" />
+                        <label>2006</label>
+                        <div class="correct-answer correct">Correto</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q9a3" name="q9" />
+                        <label>2007</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                </section>
+                <br />
+
+                <!-- Pergunta 10 -->
+                <section class="quiz-question">
+                    <p>
+                        10. Qual processador Ryzen foi o primeiro com 16
+                        núcleos?
+                    </p>
+                    <div>
+                        <input type="radio" id="q10a1" name="q10" />
+                        <label>Ryzen 7 1700</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q10a2" name="q10" />
+                        <label>Ryzen Threadripper 1950X</label>
+                        <div class="correct-answer correct">Correto</div>
+                    </div>
+                    <div>
+                        <input type="radio" id="q10a3" name="q10" />
+                        <label>Ryzen 9 3950X</label>
+                        <div class="correct-answer incorrect">Errado</div>
+                    </div>
+                </section>
+                <br />
+            </article>
+        </main>
+        <footer>
+            <p>
+                &copy; 2024/2025 Grupo 6 - Projeto 1 - LP1. Todos os direitos
+                reservados.
+            </p>
+        </footer>
+    </body>
 </html>
