@@ -144,8 +144,6 @@ article {
     /* background: linear-gradient(145deg, #333, #1a1a1a);  Fundo cinza com degradê */
     padding: 30px;
     border-radius: 15px;
-    /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6); */
-    background: linear-gradient(145deg, #333, #1a1a1a);
 }
 
 article h1 {
@@ -329,20 +327,21 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
-
+.historia {
+    margin-left: 100px;
+}
 /* Timeline on the right side */
 aside.timeline {
-    flex: 1 1 30%; /* Make the timeline take 30% of space */
-    background: #f4f4f4;
     padding: 10px;
-    position: sticky;
-    top: 20px;
-    max-height: 90vh;
+    position: fixed;
+    left: 5px;
+    top: 50%;
     overflow-y: auto;
 }
 /* Timeline links */
 aside.timeline ul {
     list-style: none;
+    text-align: center;
 }
 
 aside.timeline ul li {
@@ -350,12 +349,18 @@ aside.timeline ul li {
 }
 
 aside.timeline ul li a {
+    color: #f2f2f2;
     text-decoration: none;
-    color: #000;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 aside.timeline ul li a:hover {
-    color: #007bff;
+    background-color: #ff6600;
+    color: #000;
 }
 
 /* Tornar o site responsivo */
@@ -409,6 +414,10 @@ aside.timeline ul li a:hover {
     nav ul li:last-child {
         grid-column: 1;
     }
+    .block {
+        display: block;
+        text-align: center;
+    }
     #quiz {
         max-width: 80%;
     }
@@ -423,6 +432,9 @@ aside.timeline ul li a:hover {
 }
 
 @media (max-width: 500px) {
+    header {
+        background: linear-gradient(180deg, #000, #222);
+    }
     .nav-right {
         display: none; /* Escondendo o menu à direita */
         width: 100%;
@@ -440,7 +452,6 @@ aside.timeline ul li a:hover {
 
 
 }
-
 #menu-toggle {
     display: none;
 }
