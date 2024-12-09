@@ -24,7 +24,7 @@ body {
     background-color: #1a1a1a; /* Cor de fundo do body: cinza escuro */
     color: #f2f2f2; /* Cor do texto: branco/clarinho */
     line-height: 1.8; /* Define a altura da linha do texto como 1.8 para melhorar a legibilidade */
-    min-width: 450px; /* Largura mínima do body */
+    /* min-width: 450px;  Largura mínima do body */
     overflow-x: hidden; /* Impede que o conteúdo transborde horizontalmente */
 }
 
@@ -148,11 +148,12 @@ nav a:hover {
 
 /* Conteúdo principal */
 article {
-    max-width: 80%; /* Define a largura máxima do artigo para 80% da largura da página */
+    max-width: 60%; /* Define a largura máxima do artigo para 80% da largura da página */
     margin: 20px auto; /* Adiciona margem de 20px em cima e embaixo, e centraliza horizontalmente */
     padding: 30px; /* Adiciona 30px de espaço interno */
     border-radius: 15px; /* Bordas arredondadas */
     /* background: linear-gradient(145deg, #333, #1a1a1a); Fundo comentado, degradê cinza */
+    /* opacity: 0.5; */
 }
 
 article h1 {
@@ -349,7 +350,7 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
 
 /* Estilo específico para a classe 'historia' */
 .historia {
-    margin-left: 100px; /* Adiciona uma margem à esquerda */
+    margin: 20px auto; /* Adiciona uma margem à esquerda */
 }
 
 /* Estilo para a linha do tempo fixa à direita */
@@ -359,6 +360,7 @@ aside.timeline {
     left: 5px; /* Posiciona à esquerda */
     top: 50%; /* Posiciona ao meio verticalmente */
     overflow-y: auto; /* Permite o scroll vertical */
+    
 }
 
 /* Estilo para os links da linha do tempo */
@@ -443,6 +445,7 @@ aside.timeline ul li a:hover {
 
 /* Quando a largura do monitor for inferior a 700px */
 @media (max-width: 750px){
+
     nav ul li:last-child {
         grid-column: 1; /* Muda o último item da lista para a primeira coluna */
     }
@@ -464,10 +467,18 @@ aside.timeline ul li a:hover {
     section {
         padding: 1em; /* Diminui o preenchimento das seções */
     }
+    aside li {
+        float: left;
+    }
+    aside ul{
+        top: 300px;
+        position: fixed;
+    }
+
 }
 
 /* Quando a largura do monitor for inferior a 500px */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     header {
         background: linear-gradient(180deg, #000, #222); /* Altera a direção do gradiente no header */
     }
@@ -478,13 +489,23 @@ aside.timeline ul li a:hover {
         text-align: center; /* Centraliza o conteúdo */
         margin-top: 10px; /* Adiciona uma margem superior */
     }
-
     .menu-icon {
         display: flex; /* Exibe o menu hamburguer para dispositivos móveis */
     }
 
     #menu-toggle:checked + .menu-icon + .nav-right {
         display: block; /* Exibe a navegação quando o menu hamburguer for ativado */
+    }
+
+    aside li{
+        float: left;
+    }
+    aside ul {
+        top: 0;
+    }
+    aside.timeline ul li a {
+        padding: 5px;
+        font-size: 0.8em;
     }
 }
 
