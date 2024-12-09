@@ -8,7 +8,7 @@ html,
 body {
     display: flex; /* Define o conteúdo do site como um container flexível */
     flex-direction: column; /* Organiza os elementos de forma vertical (em coluna) */
-    min-height: 100vh; /* O body ocupa toda a altura da tela */
+    min-height: 100vh;
 }
 
 /* Propriedades do Main */
@@ -148,7 +148,7 @@ nav a:hover {
 
 /* Conteúdo principal */
 article {
-    max-width: 60%; /* Define a largura máxima do artigo para 80% da largura da página */
+    max-width: 75%; /* Define a largura máxima do artigo para 80% da largura da página */
     margin: 20px auto; /* Adiciona margem de 20px em cima e embaixo, e centraliza horizontalmente */
     padding: 30px; /* Adiciona 30px de espaço interno */
     border-radius: 15px; /* Bordas arredondadas */
@@ -444,7 +444,7 @@ aside.timeline ul li a:hover {
 }
 
 /* Quando a largura do monitor for inferior a 700px */
-@media (max-width: 750px){
+@media (max-width: 800px){
 
     nav ul li:last-child {
         grid-column: 1; /* Muda o último item da lista para a primeira coluna */
