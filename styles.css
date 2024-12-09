@@ -202,6 +202,8 @@ section h3 {
 .block {
     display: flex; /* Flexbox para alinhamento dos itens */
     align-items: center; /* Alinha os itens verticalmente ao centro */
+    flex-wrap: nowrap;
+    align-content:center;
     gap: 1em; /* Espaço entre a imagem e o texto */
     text-align: left; /* Alinha o texto à esquerda */
 }
@@ -214,14 +216,14 @@ section h3 {
 }
 
 .block p {
-    margin: 0; /* Remove a margem do parágrafo */
-    color: #fff; /* Cor branca para o texto */
-    font-size: 1em; /* Tamanho de fonte normal */
-    line-height: 1.5; /* Espaçamento entre as linhas de texto */
+    font-size: 18px; /* Tamanho da fonte dos parágrafos dentro da seção */
+    color: #cccccc; /* Cor do texto cinza claro */
+    margin: 15px 0; /* Margem superior e inferior de 15px */
+    line-height: 1.8; /* Espaçamento entre as linhas de texto */
     text-align: justify; /* Alinha o texto justificado */
 }
 
-/* Rodapé */
+/*  Rodapé  */
 footer {
     text-align: center; /* Alinha o texto ao centro */
     font-weight: bold; /* Define o texto do rodapé como em negrito */
@@ -235,7 +237,8 @@ footer p {
     margin: 0; /* Remove a margem do parágrafo dentro do rodapé */
 }
 
-/* Estilos para as imagens em geral */
+
+/* Estilos para as imagens  */
 img {
     border-radius: 10px; /* Bordas arredondadas nas imagens */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra suave ao redor da imagem */
@@ -439,13 +442,16 @@ aside.timeline ul li a:hover {
 }
 
 /* Quando a largura do monitor for inferior a 700px */
-@media (max-width: 700px){
+@media (max-width: 750px){
     nav ul li:last-child {
         grid-column: 1; /* Muda o último item da lista para a primeira coluna */
     }
     .block {
         display: block; /* Exibe os blocos como elementos de bloco */
         text-align: center; /* Centraliza o texto dentro dos blocos */
+    }
+    .block img {
+        max-width: 250px;
     }
     #quiz {
         max-width: 80%; /* Limita a largura máxima do quiz para 80% */
