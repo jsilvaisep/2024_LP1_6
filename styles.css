@@ -310,21 +310,13 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
     cursor: not-allowed; /* Exibe um cursor de "não permitido" */
 }
 
-/* Estilo para o ícone do menu hamburguer */
-.menu-icon {
-    display: none; /* Inicialmente escondido */
-    flex-direction: column; /* Organiza os elementos em coluna */
-    cursor: pointer; /* Muda o cursor para um ponteiro */
-    width: 30px; /* Define a largura do ícone */
-    height: 30px; /* Define a altura do ícone */
-    justify-content: space-between; /* Espaça os itens de forma uniforme */
-}
+
 
 /* Estilo para as barras do menu hamburguer */
 .menu-icon div {
     width: 30px; /* Define a largura das barras */
     height: 4px; /* Define a altura das barras */
-    background-color: #f44336; /* Cor branca para as barras */
+    background-color: #ff6600; /* Cor branca para as barras */
 }
 
 /* Exibe o menu quando o checkbox está marcado */
@@ -398,14 +390,6 @@ aside.timeline ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.menu-icon div {
-    width: 100%;
-    height: 5px;
-    background-color: black;
-    border-radius: 3px;
-    transition: all 0.3s ease-in-out;
 }
 
 /* Hidden Checkbox */
