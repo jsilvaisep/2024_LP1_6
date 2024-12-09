@@ -23,7 +23,7 @@ body {
     background-color: #1a1a1a; /* Cinza escuro */
     color: #f2f2f2;/* Texto claro */
     line-height: 1.8;/* Altura linha */
-    min-width: 350px;/* Largura minima */
+    min-width: 450px;/* Largura minima */
     overflow-x: hidden;/* Se o conteudo saira dos limites, esconder conteudo */
 }
 
@@ -435,6 +435,7 @@ aside.timeline ul li a:hover {
     header {
         background: linear-gradient(180deg, #000, #222);
     }
+    
     .nav-right {
         display: none; /* Escondendo o menu à direita */
         width: 100%;
@@ -449,7 +450,7 @@ aside.timeline ul li a:hover {
     #menu-toggle:checked + .menu-icon + .nav-right {
         display: block;
     }
-
+ 
 
 }
 #menu-toggle {
