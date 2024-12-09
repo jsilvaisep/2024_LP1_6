@@ -26,6 +26,7 @@ body {
     line-height: 1.8; /* Define a altura da linha do texto como 1.8 para melhorar a legibilidade */
     /* min-width: 450px;  Largura mínima do body */
     overflow-x: hidden; /* Impede que o conteúdo transborde horizontalmente */
+    min-width: 410px;
 }
 
 /* Propriedades Header */
@@ -108,9 +109,9 @@ ul {
 }
 
 /* Propriedades dos itens da lista dentro da nav */
-nav ul li {
+/* nav ul li {
     margin: 0.5em; /* Margem de 0.5em entre os itens da lista */
-}
+} */
 
 nav ul li:last-child {
     margin-right: 0; /* Remove a margem direita do último item da lista */
@@ -125,6 +126,7 @@ nav a {
     border-radius: 5px; /* Bordas arredondadas nos links */
     transition: all 0.3s ease; /* Transição suave para todos os efeitos */
     position: relative; /* Define a posição como relativa para poder aplicar transformações */
+    min-width: 200px;
 }
 
 /* Efeitos ao passar o mouse sobre os links */
@@ -254,7 +256,7 @@ figcaption {
 
 /* Estilo para o logotipo */
 .logo {
-    max-width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+    min-width: 100px; /* Garante que a imagem ocupe toda a largura disponível */
     height: auto; /* Ajusta a altura automaticamente para manter a proporção */
     border-radius: 10px; /* Arredonda os cantos da imagem */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Aplica uma sombra na imagem */
