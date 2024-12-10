@@ -23,6 +23,11 @@ main {
     /* Define o container flexível para o conteúdo dentro de main */
     flex-direction: column;
     /* Organiza os elementos dentro do main em coluna (empilhados verticalmente) */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-image: url('images/tech2.png'); /* Adiciona o fundo (opcional) */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço do main */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
 }
 
 /* Propriedades do Body */
