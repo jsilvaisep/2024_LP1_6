@@ -35,7 +35,7 @@
             <article>
                 <h2>Inovações Tecnológicas da AMD</h2>
                 <br />
-                <section>
+                <section id="Ryzen">
                     <p>
                         A AMD (Advanced Micro Devices) é reconhecida por sua
                         capacidade de inovar e transformar o setor de
@@ -81,8 +81,20 @@
                     </div>
                 </section>
                 <br />
-                <section>
+                <section id="GPU">
                     <h3>GPUs Radeon e Tecnologias Gráficas</h3>
+                    <p>
+                        A <strong>ATI Technologies Inc.</strong> foi uma empresa canadiana de tecnologia de semicondutores sediada em Markham, Ontário, especializada no 
+                        desenvolvimento de unidades de processamento gráfico (GPUs) e chipsets. Fundada em 1985, a empresa tornou-se pública em 1993 e foi 
+                        adquirida pela <strong>AMD em 2006</strong>. Como uma grande empresa de semicondutores sem fábrica própria (fabless), a <strong>ATI</strong> realizava pesquisa e 
+                        desenvolvimento internamente, terceirizando a fabricação e montagem dos seus produtos. Com o declínio e eventual falência da 3dfx 
+                        em 2000, a ATI e a sua principal concorrente Nvidia tornaram-se os dois líderes dominantes na indústria de processadores gráficos, 
+                        forçando outros fabricantes a ocuparem papéis de nicho.
+                    </p>
+                    <p>
+                        O nome comercial atribuído ao GPU pela <strong>AMD/ATI</strong>. Note-se que as marcas registadas da ATI foram substituídas pelas marcas registadas da AMD, 
+                        começando com a série <strong>Radeon HD 6000</strong> para desktops e a série <strong>AMD FirePro</strong> para gráficos profissionais.
+                    </p>
                     <div class="block">
                         <figure>
                             <img class="foto" src="images/7900xtx.png" alt="Radeon 7900 XTX" />
@@ -110,7 +122,7 @@
                     </ul>
                 </section>
                 <br />
-                <section>
+                <section id="chiplets">
                     <h3>Chiplets e Design Modular</h3>
                     <div class="block">
                         <figure>
@@ -137,7 +149,7 @@
                     </ul>
                 </section>
                 <br />
-                <section>
+                <section id="servers">
                     <h3>Soluções para Data Centers e Servidores</h3>
                     <div class="block">
                         <figure>
@@ -161,16 +173,16 @@
                     </ul>
                 </section>
                 <br />
-                <section>
-                    <h3>Parcerias no Mercado de Consoles</h3>
+                <section id="consolas">
+                    <h3>Parcerias no Mercado de Consolas</h3>
                     <div class="block">
                         <figure>
                             <img class="foto" src="images/steamdeck.png" alt="Valve Steam Deck" />
                             <figcaption>Valve Steam Deck</figcaption>
                         </figure>
                         <p>
-                            A AMD fornece chips para os principais consoles de
-                            videogame, como:
+                            A AMD fornece chips para os principais consolas de
+                            jogos, como:
                         </p>
                     </div>
                     <ul class="ul-inovacoes">
@@ -183,9 +195,16 @@
                         arquitetura Zen e GPUs RDNA, garantindo gráficos e
                         desempenho de alta qualidade.
                     </p>
+                    <ul class="ul-inovacoes">
+                        <p><strong>Exemplo:</strong> Steam Deck usa APU personalizado:</p>
+                        <li>6 nm AMD APU</li>
+                        <li>CPU: Zen 2 4c/8t, 2.4-3.5GHz (up to 448 GFlops FP32)</li>
+                        <li>GPU: 8 RDNA 2 CUs, 1.6GHz (1.6 TFlops FP32)</li>
+                        <li>APU power: 4-15W</li>
+                    <ul>
                 </section>
                 <br />
-                <section>
+                <section id="HPC">
                     <h3>Computação Exascale e Futuro</h3>
                     <div class="block">
                         <figure>
@@ -203,6 +222,22 @@
                     </div>
                 </section>
             </article>
+            <aside class="timeline">
+                <input type="checkbox" id="menu-toggle-2" />
+                <label for="menu-toggle-2" class="menu-icon hide">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <ul class="topics backgroud">
+                    <li><a href="#Ryzen" onclick="document.getElementById('menu-toggle-2').checked = false;">Ryzen</a></li>
+                    <li><a href="#GPU" onclick="document.getElementById('menu-toggle-2').checked = false;">GPU</a></li>
+                    <li><a href="#chiplets" onclick="document.getElementById('menu-toggle-2').checked = false;">chiplets</a></li>
+                    <li><a href="#servers" onclick="document.getElementById('menu-toggle-2').checked = false;">Servidores</a></li>
+                    <li><a href="#consolas" onclick="document.getElementById('menu-toggle-2').checked = false;">Consolas</a></li>
+                    <li><a href="#HPC" onclick="document.getElementById('menu-toggle-2').checked = false;">HPC</a></li>
+                </ul>
+            </aside>
         </main>
         <footer>
             <p>
