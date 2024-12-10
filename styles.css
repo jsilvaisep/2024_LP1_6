@@ -309,7 +309,7 @@ section h3 {
 }
 
 .block img {
-    width: 350px;
+    max-width: 150px;
     /* Largura da imagem */
     height: auto;
     /* Mantém a proporção da imagem */
@@ -324,7 +324,7 @@ section h3 {
     /* Tamanho da fonte dos parágrafos dentro da seção */
     color: #cccccc;
     /* Cor do texto cinza claro */
-    margin: 15px 0;
+    margin: 15px 0 15px 30px;
     /* Margem superior e inferior de 15px */
     line-height: 1.8;
     /* Espaçamento entre as linhas de texto */
@@ -702,7 +702,7 @@ aside.timeline ul li a:hover {
     }
 
     .block img {
-        max-width: 250px;
+        max-width: 150px;
     }
 
     #quiz {
