@@ -331,7 +331,14 @@ section h3 {
     text-align: justify;
     /* Alinha o texto justificado */
 }
+.block a {
+    color: #ff6600;
+    text-decoration: none;
+}
 
+.block a:hover {
+    color: #f1f1f1;
+}
 /*  Rodapé  */
 footer {
     text-align: center;
@@ -641,8 +648,12 @@ aside.timeline ul li a:hover {
 .hide {
     display: none;
 }
-.foto {
-    border-radius: 20%;
+#foto {
+    border-radius: 50%;
+    max-width: 150px;
+}
+.li-about {
+    list-style: none;
 }
 /* Quando a largura do monitor for inferior a 1024px */
 @media (max-width:
@@ -711,6 +722,8 @@ aside.timeline ul li a:hover {
 
     aside.timeline {
         top: auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 15%;
     }
 
