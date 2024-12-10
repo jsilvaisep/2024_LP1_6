@@ -35,7 +35,7 @@
             <article>
                 <h2>Inovações Tecnológicas da AMD</h2>
                 <br />
-                <section>
+                <section id="Ryzen">
                     <p>
                         A AMD (Advanced Micro Devices) é reconhecida por sua
                         capacidade de inovar e transformar o setor de
@@ -81,7 +81,7 @@
                     </div>
                 </section>
                 <br />
-                <section>
+                <section id="GPU">
                     <h3>GPUs Radeon e Tecnologias Gráficas</h3>
                     <p>
                         A <strong>ATI Technologies Inc.</strong> foi uma empresa canadiana de tecnologia de semicondutores sediada em Markham, Ontário, especializada no 
@@ -122,7 +122,7 @@
                     </ul>
                 </section>
                 <br />
-                <section>
+                <section id="chiplets">
                     <h3>Chiplets e Design Modular</h3>
                     <div class="block">
                         <figure>
@@ -149,7 +149,7 @@
                     </ul>
                 </section>
                 <br />
-                <section>
+                <section id="servers">
                     <h3>Soluções para Data Centers e Servidores</h3>
                     <div class="block">
                         <figure>
@@ -173,8 +173,8 @@
                     </ul>
                 </section>
                 <br />
-                <section>
-                    <h3>Parcerias no Mercado de Consoles</h3>
+                <section id="consolas">
+                    <h3>Parcerias no Mercado de Consolas</h3>
                     <div class="block">
                         <figure>
                             <img class="foto" src="/images/steamdeck.png" alt="Valve Steam Deck" />
@@ -204,7 +204,7 @@
                     <ul>
                 </section>
                 <br />
-                <section>
+                <section id="HPC">
                     <h3>Computação Exascale e Futuro</h3>
                     <div class="block">
                         <figure>
@@ -222,6 +222,22 @@
                     </div>
                 </section>
             </article>
+            <aside class="timeline">
+                <input type="checkbox" id="menu-toggle-2" />
+                <label for="menu-toggle-2" class="menu-icon hide">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <ul class="topics backgroud">
+                    <li><a href="#Ryzen" onclick="document.getElementById('menu-toggle-2').checked = false;">Ryzen</a></li>
+                    <li><a href="#GPU" onclick="document.getElementById('menu-toggle-2').checked = false;">GPU</a></li>
+                    <li><a href="#chiplets" onclick="document.getElementById('menu-toggle-2').checked = false;">chiplets</a></li>
+                    <li><a href="#servers" onclick="document.getElementById('menu-toggle-2').checked = false;">Servidores</a></li>
+                    <li><a href="#consolas" onclick="document.getElementById('menu-toggle-2').checked = false;">Consolas</a></li>
+                    <li><a href="#HPC" onclick="document.getElementById('menu-toggle-2').checked = false;">HPC</a></li>
+                </ul>
+            </aside>
         </main>
         <footer>
             <p>
