@@ -160,13 +160,13 @@ ul {
 
 /* Propriedades dos itens da lista dentro da nav */
 /* nav ul li {
-    margin: 0.5em; /* Margem de 0.5em entre os itens da lista */
-}
+    margin: 0.5em; /* Margem de 0.5em entre os itens da lista 
+}*/
 
-*/ nav ul li:last-child {
+/* nav ul li:last-child {
     margin-right: 0;
-    /* Remove a margem direita do último item da lista */
-}
+    Remove a margem direita do último item da lista
+}*/
 
 /* Estilos para os links dentro da barra de navegação */
 nav a {
@@ -464,7 +464,10 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
     display: block;
     /* Exibe o menu */
 }
-
+#menu-toggle-2:checked+.menu-icon+.topics {
+    display: block;
+    /* Exibe o menu */
+}
 /* Estilo para os blocos da linha do tempo */
 .timeline-block {
     display: flex;
@@ -507,9 +510,14 @@ aside.timeline {
     /* Posiciona ao meio verticalmente */
     overflow-y: auto;
     /* Permite o scroll vertical */
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 5px;;
 
 }
-
 /* Estilo para os links da linha do tempo */
 aside.timeline ul {
     list-style: none;
@@ -543,7 +551,7 @@ aside.timeline ul li a {
 
 /* Efeito de hover nos links */
 aside.timeline ul li a:hover {
-    background-color: #ff6600;
+    background-color:#f1f1f1;
     /* Cor de fundo laranja para efeito de hover */
     color: #000;
     /* Cor do texto preta no hover */
@@ -563,6 +571,9 @@ aside.timeline ul li a:hover {
 #menu-toggle {
     display: none;
 }
+#menu-toggle-2 {
+    display: none;
+}
 
 /* Dropdown Menu */
 .menu {
@@ -571,10 +582,12 @@ aside.timeline ul li a:hover {
     top: 90px;
     right: 0;
     max-width: 300px;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(255, 102, 0, 0.2);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
     text-align: center;
+    border-radius: 15px;
 }
 
 .menu a {
@@ -583,6 +596,7 @@ aside.timeline ul li a:hover {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    margin: 15px;
 }
 
 .menu a:hover {
@@ -592,8 +606,10 @@ aside.timeline ul li a:hover {
 /* Show Menu on Checkbox Toggle */
 #menu-toggle:checked~.menu {
     display: block;
+}   
+#menu-toggle-2:checked~.menu {
+    display: block;
 }
-
 /* Animate Menu Icon */
 #menu-toggle:checked+.menu-icon div:nth-child(1) {
     transform: rotate(45deg) translate(1px, 17px);
@@ -608,7 +624,26 @@ aside.timeline ul li a:hover {
     transform: rotate(-45deg) translate(0px, -18px);
     margin-left: 12px;
 }
+/* Animate Menu Icon */
+#menu-toggle-2:checked+.menu-icon div:nth-child(1) {
+    transform: rotate(45deg) translate(1px, 17px);
+    margin-left: 12px;
+}
 
+#menu-toggle-2:checked+.menu-icon div:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle-2:checked+.menu-icon div:nth-child(3) {
+    transform: rotate(-45deg) translate(0px, -18px);
+    margin-left: 12px;
+}
+.hide {
+    display: none;
+}
+.foto {
+    border-radius: 20%;
+}
 /* Quando a largura do monitor for inferior a 1024px */
 @media (max-width:
     /*600px*/
@@ -624,13 +659,26 @@ aside.timeline ul li a:hover {
         margin-top: 10px;
         /* Adiciona uma margem superior */
     }
-
+    .topics {
+        display: none;
+        /* Esconde a navegação à direita */
+        width: 100%;
+        /* Ocupa toda a largura disponível */
+        text-align: center;
+        /* Centraliza o conteúdo */
+        margin-top: 10px;
+        /* Adiciona uma margem superior */
+    }
     .menu-icon {
         display: flex;
         /* Exibe o menu hamburguer para dispositivos móveis */
     }
 
     #menu-toggle:checked+.menu-icon+.nav-right {
+        display: block;
+        /* Exibe a navegação quando o menu hamburguer for ativado */
+    }
+    #menu-toggle-2:checked+.menu-icon+.topics {
         display: block;
         /* Exibe a navegação quando o menu hamburguer for ativado */
     }
@@ -661,18 +709,21 @@ aside.timeline ul li a:hover {
         /* Diminui o preenchimento das seções */
     }
 
-    aside li {
-        float: left;
-    }
-
-    aside ul {
-        top: 0;
-        position: fixed;
+    aside.timeline {
+        top: auto;
+        width: 15%;
     }
 
     aside.timeline ul li a {
         padding: 5px;
         font-size: 0.8em;
+    }
+    .backgroud {
+        background-color: rgba(255, 102, 0, 0.2);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        text-align: center;
+        border-radius: 15px;
     }
 }
 
