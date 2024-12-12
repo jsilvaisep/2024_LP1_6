@@ -25,9 +25,9 @@ main {
     /* Organiza os elementos dentro do main em coluna (empilhados verticalmente) */
     padding: 20px; /* Adiciona espaçamento interno */
     background-image: url('images/tech2.png'); /* Adiciona o fundo (opcional) */
-    background-size: cover; /* Faz a imagem cobrir todo o espaço do main */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
+    /* background-size: cover;  Faz a imagem cobrir todo o espaço do main */
+    /* background-position: center;  Centraliza a imagem */
+    /* background-repeat: no-repeat; Evita repetição da imagem */
 }
 
 /* Propriedades do Body */
@@ -558,8 +558,6 @@ aside.timeline ul li a:hover {
     display: none;
 }
 
-
-
 .hide {
     display: none;
 }
@@ -584,7 +582,7 @@ aside.timeline ul li a:hover {
         /* Define a largura das barras */
         height: 4px;
         /* Define a altura das barras */
-        background-color: #ff6600;
+        background-color: #f1f1f1;
         /* Cor branca para as barras */
     }
 
@@ -616,8 +614,8 @@ aside.timeline ul li a:hover {
         top: 90px;
         right: 0;
         max-width: 300px;
-        /* background-color: rgba(255, 255, 255, 0.5); */
-        background-color: rgba(255, 102, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.5);
+        /* background-color: rgba(255, 102, 0, 0.2); */
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         padding: 10px 0;
         text-align: center;
@@ -751,7 +749,8 @@ aside.timeline ul li a:hover {
     }
 
     .backgroud {
-        background-color: rgba(255, 102, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.5);
+        /* background-color: rgba(255, 102, 0, 0.2); */
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         padding: 10px 0;
         text-align: center;
