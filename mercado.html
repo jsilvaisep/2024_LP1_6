@@ -36,7 +36,7 @@
                 <h2>A Força da AMD no Mercado Atual</h2>
                 <br />
                 <section>
-                    <h3>Impacto no Mercado</h3>
+                    <h3 id="impacto">Impacto no Mercado</h3>
                     <p>A AMD é hoje um exemplo de como inovação, eficiência e acessibilidade podem redefinir uma indústria. Com produtos que rivalizam 
                         ou superam a concorrência, a empresa está moldando o futuro da computação moderna. Seu impacto vai além de tecnologia, 
                         proporcionando um mercado mais competitivo e beneficiando consumidores e empresas.</p>
@@ -45,7 +45,7 @@
                 </section>
                 <br />
                 <section>
-                    <h3>Liderança em Processadores</h3>
+                    <h3 id="lideranca">Liderança em Processadores</h3>
                     <p>A AMD alcançou um grande sucesso com suas linhas de processadores <strong>Ryzen </strong>e
                         <strong> EPYC</strong>, marcando uma nova era na computação para 
                         consumidores e data centers.</p>
@@ -70,7 +70,7 @@
                 </section>
                 <br />
                 <section>
-                    <h3>Inovação em Placas Gráficas</h3>
+                    <h3 id="inovacao">Inovação em Placas Gráficas</h3>
                     <p>A AMD também tem se destacado no mercado de GPUs com as linhas Radeon RX e Instinct, voltadas para gamers 
                         e computação de alto desempenho, respectivamente.</p>
                     <ul>
@@ -89,7 +89,7 @@
                 </section>
                 <br>
                 <section>
-                    <h3>Competição com Intel e NVIDIA</h3>
+                    <h3 id="competicao">Competição com Intel e NVIDIA</h3>
                     <ul>
                         <li><strong>A AMD tem desafiado os dois maiores nomes da tecnologia:</strong></li>
                         <li>Contra a <strong>Intel</strong>, conquistou grande parte do mercado de desktops e servidores, graças ao desempenho multicore superior dos processadores Ryzen e EPYC.</li>
@@ -98,13 +98,28 @@
                 </section>
                 <br>
                 <section>
-                    <h3>Sustentabilidade e Eficiência</h3>
+                    <h3 id="sustentabilidade">Sustentabilidade e Eficiência</h3>
                     <p>A AMD tem priorizado a eficiência energética e o design sustentável. Seus produtos não só entregam alto desempenho, mas também atendem à crescente demanda por soluções que reduzam o consumo de energia e a pegada de carbono.</p>
                 </section>
             </article>
+            <aside class="timeline">
+                <input type="checkbox" id="menu-toggle-2" />
+                <label for="menu-toggle-2" class="menu-icon hide arrow">
+                    <div></div>
+                    <div></div>
+                </label>
+                <ul class="topics backgroud">
+                    <li><a href="#impacto" onclick="document.getElementById('menu-toggle-2').checked = false;">Impacto</a></li>
+                    <li><a href="#lideranca" onclick="document.getElementById('menu-toggle-2').checked = false;">Lideraança</a></li>
+                    <li><a href="#inovacao" onclick="document.getElementById('menu-toggle-2').checked = false;">Inovação</a></li>
+                    <li><a href="#competicao" onclick="document.getElementById('menu-toggle-2').checked = false;">Competição</a></li>
+                    <li><a href="#sustentabilidade" onclick="document.getElementById('menu-toggle-2').checked = false;">Sustentabilidade</a></li>
+                </ul>
+            </aside>
         </main>
+
         <footer>
-            <p>&copy; 2024/2025 Grupo 6 - Projeto 1 - LP1. Todos os direitos reservados.</p>
+            <p>&copy; 2024/2025 <strong>Grupo 6 - Projeto 1 - LP1</strong>. Todos os direitos reservados.</p>
         </footer>
     </body>
 </html>

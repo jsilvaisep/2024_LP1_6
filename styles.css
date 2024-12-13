@@ -562,13 +562,21 @@ aside.timeline ul li a:hover {
     display: none;
 }
 
-#foto {
-    border-radius: 50%;
-    max-width: 150px;
+.perfil {
+    border-radius: 50% !important;
+    max-width: 150px !important;
 }
 
 .li-about {
     list-style: none;
+}
+.arrow div:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 0px);
+        margin-left: 12px;
+}
+.arrow div:nth-child(2) {
+        transform: rotate(-45deg) translate(33px, 0px);
+        margin-left: 12px;
 }
 
 /* Quando a largura do monitor for inferior a 1024px */
@@ -660,16 +668,16 @@ aside.timeline ul li a:hover {
 
     /* Animate Menu Icon */
     #menu-toggle-2:checked+.menu-icon div:nth-child(1) {
-        transform: rotate(45deg) translate(0px, 18px);
+        transform: rotate(-45deg) translate(-1.2px, 1.2px);
         margin-left: 12px;
     }
 
-    #menu-toggle-2:checked+.menu-icon div:nth-child(2) {
+/*     #menu-toggle-2:checked+.menu-icon div:nth-child(2) {
         opacity: 0;
-    }
+    } */
 
-    #menu-toggle-2:checked+.menu-icon div:nth-child(3) {
-        transform: rotate(-45deg) translate(0px, -18px);
+    #menu-toggle-2:checked+.menu-icon div:nth-child(2) {
+        transform: rotate(45deg) translate(-5px, -30px);
         margin-left: 12px;
     }
 
