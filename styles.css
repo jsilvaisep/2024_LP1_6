@@ -486,6 +486,7 @@ aside.timeline ul li a:hover {
 
     .menu a:hover {
         background-color: #FF5722;
+        color: white; 
         transition: none;
         font-size:18px;
     }
@@ -584,7 +585,7 @@ aside.timeline ul li a:hover {
     }
 
     .backgroud {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(0, 0, 0, 0.75);
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         padding: 10px 0;
         text-align: center;
