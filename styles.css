@@ -1,30 +1,25 @@
 /* Remover todas os espaços dentro e fora da margem de todos os elementos */
 * {
-    margin: 0;
-    /* Remove as margens de todos os elementos */
-    padding: 0;
-    /* Remove o padding (espaçamento interno) de todos os elementos */
+    margin: 0; /* Remove as margens de todos os elementos */
+    padding: 0; /* Remove o padding (espaçamento interno) de todos os elementos */
 }
 
-html,
-body {
-    display: flex;
-    /* Define o conteúdo do site como um container flexível */
-    flex-direction: column;
-    /* Organiza os elementos de forma vertical (em coluna) */
+html,body {
+    display: flex; /* Define o conteúdo do site como um container flexível */    
+    flex-direction: column; /* Organiza os elementos de forma vertical (em coluna) */
     scroll-padding-top: 225px;
 }
 
 /* Propriedades do Main */
 main {
-    flex: 1;
-    /* Faz o main ocupar o restante do espaço disponível */
-    display: flex;
-    /* Define o container flexível para o conteúdo dentro de main */
-    flex-direction: column;
-    /* Organiza os elementos dentro do main em coluna (empilhados verticalmente) */
+    /* flex: 1;  Faz o main ocupar o restante do espaço disponível */
+    display: flex; /* Define o container flexível para o conteúdo dentro de main */
+    flex-direction: column;  /* Organiza os elementos dentro do main em coluna (empilhados verticalmente) */
     padding: 20px; /* Adiciona espaçamento interno */
-    background-image: url('images/tech2.png'); /* Adiciona o fundo (opcional) */
+    background-image: url('images/amd_background.png'); /* Adiciona o fundo (opcional) */
+    background-attachment: fixed; /* Makes the background sticky */
+    background-position: center; /* Position the background in the center */
+    background-size: cover; /* Make sure the background covers the full screen */
     /* background-size: cover;  Faz a imagem cobrir todo o espaço do main */
     /* background-position: center;  Centraliza a imagem */
     /* background-repeat: no-repeat; Evita repetição da imagem */
@@ -32,313 +27,223 @@ main {
 
 /* Propriedades do Body */
 body {
-    font-family: 'Roboto', sans-serif;
-    /* Define a fonte como 'Roboto', com sans-serif como fallback */
-    background-color: #1a1a1a;
-    /* Cor de fundo do body: cinza escuro */
-    color: #f2f2f2;
-    /* Cor do texto: branco/clarinho */
-    line-height: 1.8;
-    /* Define a altura da linha do texto como 1.8 para melhorar a legibilidade */
-    /* min-width: 450px;  Largura mínima do body */
-    overflow-x: hidden;
-    /* Impede que o conteúdo transborde horizontalmente */
+    font-family: 'Roboto', sans-serif; /* Define a fonte como 'Roboto', com sans-serif como fallback */
+    background-color: #1a1a1a; /* Cor de fundo do body: cinza escuro */
+    color: #f2f2f2; /* Cor do texto: branco/clarinho */
+    line-height: 1.8; /* Define a altura da linha do texto como 1.8 para melhorar a legibilidade */
+    overflow-x: hidden; /* Impede que o conteúdo transborde horizontalmente */
     min-width: 410px;
 }
 
 /* Propriedades Header */
 header {
-    background: linear-gradient(90deg, #000, #222);
-    /* Gradiente de fundo de preto a cinza escuro (90 graus) */
-    padding: 15px 20px;
-    /* Define o padding (espaçamento interno) em cima/embaixo de 15px e à esquerda/direita de 20px */
-    border-bottom: 3px solid #ff6600;
-    /* Borda inferior laranja para dar destaque */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-    /* Sombra preta com 4px de desfoque vertical, 10px de espalhamento */
-    position: sticky;
-    /* Faz com que o cabeçalho permaneça fixo no topo ao rolar a página */
-    top: 0;
-    /* Defina a margem superior como 0, fixando o cabeçalho no topo */
-    display: flex;
-    /* Define o container flexível para os elementos dentro do header */
-    justify-content: space-between;
-    /* Distribui os itens de forma espaçada entre si */
-    align-items: center;
-    /* Alinha os itens verticalmente ao centro */
+    background: linear-gradient(90deg, #000, #222); /* Gradiente de fundo de preto a cinza escuro (90 graus) */
+    padding: 15px 20px; /* Define o padding (espaçamento interno) em cima/embaixo de 15px e à esquerda/direita de 20px */
+    border-bottom: 3px solid #FF5722; /* Borda inferior laranja para dar destaque */
+    box-shadow: 0px 6px 15px #FF5722; /* Sombra preta com 4px de desfoque vertical, 10px de espalhamento */
+    position: sticky; /* Faz com que o cabeçalho permaneça fixo no topo ao rolar a página */
+    top: 0; /* Defina a margem superior como 0, fixando o cabeçalho no topo */
+    display: flex; /* Define o container flexível para os elementos dentro do header */
+    justify-content: space-between; /* Distribui os itens de forma espaçada entre si */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
 
 /* Propriedades da Nav Bar */
 nav {
-    display: flex;
-    /* Define o conteúdo da barra de navegação como um container flexível */
-    justify-content: space-between;
-    /* Alinha os itens de forma espaçada entre si */
-    align-items: center;
-    /* Alinha os itens verticalmente ao centro */
-    padding: 10px 20px;
-    /* Adiciona 10px de padding superior e inferior, e 20px nas laterais */
-    border-radius: 15px;
-    /* Arredonda as bordas da barra de navegação */
-    width: 100%;
-    /* Faz com que a largura da barra de navegação ocupe toda a largura disponível */
+    display: flex; /* Define o conteúdo da barra de navegação como um container flexível */
+    justify-content: space-between; /* Alinha os itens de forma espaçada entre si */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 10px 20px; /* Adiciona 10px de padding superior e inferior, e 20px nas laterais */
+    border-radius: 15px; /* Arredonda as bordas da barra de navegação */
+    width: 100%; /* Faz com que a largura da barra de navegação ocupe toda a largura disponível */
 }
 
 /* Propriedades da Lista desordenada dentro da Nav Bar */
 nav ul {
-    list-style: none;
-    /* Remove os pontos ou marcadores da lista */
-    display: flex;
-    /* Define o conteúdo da lista como um container flexível */
+    list-style: none;  /* Remove os pontos ou marcadores da lista */
+    display: flex; /* Define o conteúdo da lista como um container flexível */
 }
 
 /* Propriedades do Menu à esquerda (Logo) */
 .nav-left {
-    flex: 1;
-    /* Faz o item ocupar 1 parte do espaço disponível */
-    max-width: 15%;
-    /* Limita a largura máxima do menu à esquerda para 15% */
+    flex: 1; /* Faz o item ocupar 1 parte do espaço disponível */
+    max-width: 15%; /* Limita a largura máxima do menu à esquerda para 15% */
 }
 
 /* Propriedades da Imagem do Logo */
 .nav-left img {
-    max-height: 50px;
-    /* Define a altura máxima da imagem do logo como 50px */
+    max-height: 50px; /* Define a altura máxima da imagem do logo como 50px */
 }
 
 /* Estilos gerais para as listas */
 ul {
-    font-family: 'Roboto', sans-serif;
-    /* Define a fonte como 'Roboto' para os itens da lista */
-    font-size: 18px;
-    /* Tamanho da fonte dos itens da lista */
-    color: #f2f2f2;
-    /* Cor cinza claro para o texto da lista */
+    font-family: 'Roboto', sans-serif; /* Define a fonte como 'Roboto' para os itens da lista */
+    font-size: 18px; /* Tamanho da fonte dos itens da lista */
+    color: #f2f2f2; /* Cor cinza claro para o texto da lista */
 }
 
 /* Estilos específicos para a classe ul-inovacoes */
 .ul-inovacoes {
-    color: #f2f2f2;
-    /* Cor do texto cinza claro */
-    margin: 15px 0;
-    /* Margem de 15px superior e inferior */
-    line-height: 1.8;
-    /* Define a altura da linha como 1.8 para maior espaçamento */
-    text-align: justify;
-    /* Alinha o texto de forma justificada */
-    padding-left: 40px;
-    /* Adiciona padding à esquerda */
-    margin: 0;
-    /* Remove as margens padrão */
+    color: #f2f2f2; /* Cor do texto cinza claro */
+    margin: 15px 0; /* Margem de 15px superior e inferior */
+    line-height: 1.8; /* Define a altura da linha como 1.8 para maior espaçamento */
+    text-align: justify; /* Alinha o texto de forma justificada */
+    padding-left: 40px; /* Adiciona padding à esquerda */
+    margin: 0; /* Remove as margens padrão */
 }
 
+li {
+    font-size: 18px;
+    color: #cccccc; 
+    font-family: 'Roboto', sans-serif;
+}
 /* Propriedades do Menu à direita */
 .nav-right {
-    flex: 2;
-    /* Faz o item ocupar 2 partes do espaço disponível */
-    justify-content: flex-end;
-    /* Alinha os itens do menu à direita */
-    gap: 20px;
-    /* Adiciona 20px de distância entre os itens */
-    align-items: center;
-    /* Alinha os itens verticalmente ao centro */
+    flex: 2; /* Faz o item ocupar 2 partes do espaço disponível */
+    justify-content: flex-end; /* Alinha os itens do menu à direita */
+    gap: 20px; /* Adiciona 20px de distância entre os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
 }
 
 /* Estilos para os links dentro do menu à direita */
 .nav-right a {
-    /* color: #f2f2f2; */
-    /* Cor do texto dos links como branco */
-    text-decoration: none;
-    /* Remove o sublinhado dos links */
-    font-size: 16px;
-    /* Tamanho da fonte dos links */
-    transition: color 0.3s ease;
-    /* Transição suave para a cor do texto */
+    color: #f2f2f2; /* Cor do texto dos links como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */    
 }
 
 /* Estilos para o link ativo dentro do menu */
 .nav-right .active {
-    font-weight: bold;
-    /* Deixa o texto em negrito para o link ativo */
+    font-weight: bold; /* Deixa o texto em negrito para o link ativo */
 }
-
-/* Propriedades dos itens da lista dentro da nav */
-/* nav ul li {
-    margin: 0.5em; /* Margem de 0.5em entre os itens da lista
-}*/
-
-/* nav ul li:last-child {
-    margin-right: 0;
-    Remove a margem direita do último item da lista
-}*/
 
 /* Estilos para os links dentro da barra de navegação */
 nav a {
-    color: #f2f2f2;
-    /* Cor de texto clara para os links */
-    text-decoration: none;
-    /* Remove o sublinhado dos links */
-    font-size: 16px;
-    /* Tamanho da fonte dos links */
-    padding: 8px 15px;
-    /* Padding interno de 8px verticalmente e 15px horizontalmente */
-    border-radius: 5px;
-    /* Bordas arredondadas nos links */
-    transition: all 0.3s ease;
-    /* Transição suave para todos os efeitos */
-    position: relative;
-    /* Define a posição como relativa para poder aplicar transformações */
+    color: #FF5722; /* Cor de texto clara para os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    padding: 8px 15px; /* Padding interno de 8px verticalmente e 15px horizontalmente */
+    border-radius: 5px; /* Bordas arredondadas nos links */
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+    position: relative; /* Define a posição como relativa para poder aplicar transformações */
     min-width: 200px;
 }
 
 /* Efeitos ao passar o mouse sobre os links */
 nav a:hover {
-    background-color: #f2f2f2;
-    /* Fundo laranja ao passar o mouse */
-    color: #000;
-    /* Cor preta para o texto ao passar o mouse */
-    transform: scale(1.05);
-    /* Aumenta ligeiramente o tamanho do link ao passar o mouse */
+    font-size:20px;
+    color: #FF5722; /* Cor preta para o texto ao passar o mouse */
+    transition: all 0.3s ease;
 }
 
 /* Efeitos ao passar o mouse sobre o logo à esquerda */
 .nav-left a:hover {
-    background-color: transparent;
-    /* Fundo transparente ao passar o mouse */
+    background-color: transparent; /* Fundo transparente ao passar o mouse */
+    color: #f2f2f2; /* Cor branca para o texto ao passar o mouse */
+}
+
+nav a:hover.active{
     color: #f2f2f2;
-    /* Cor branca para o texto ao passar o mouse */
 }
 
 /* Estilos para o link ativo */
 .active {
-    background-color: #f2f2f2;
-    /* Fundo laranja para o link ativo */
-    color: #ff6600;
-    /* Cor preta para o texto do link ativo */
+    background-color: #FF5722; /* Fundo laranja para o link ativo */
+    color: #f2f2f2;  /* Cor preta para o texto do link ativo */
 }
 
 /* Conteúdo principal */
 article {
-    max-width: 75%;
-    /* Define a largura máxima do artigo para 80% da largura da página */
-    margin: 20px auto;
-    /* Adiciona margem de 20px em cima e embaixo, e centraliza horizontalmente */
-    padding: 30px;
-    /* Adiciona 30px de espaço interno */
-    border-radius: 15px;
-    /* Bordas arredondadas */
-    /* background: linear-gradient(145deg, #333, #1a1a1a); Fundo comentado, degradê cinza */
-    /* opacity: 0.5; */
+    max-width: 80%; /* Define a largura máxima do artigo para 80% da largura da página */
+    margin: 20px auto; /* Adiciona margem de 20px em cima e embaixo, e centraliza horizontalmente */
+    padding: 0px 30px 0px 30px; /* Adiciona 30px de espaço interno */
+    border-radius: 15px; /* Bordas arredondadas */
 }
 
 article h1 {
-    text-align: center;
-    /* Alinha o título principal ao centro */
-    font-size: 36px;
-    /* Tamanho da fonte do título */
-    color: #f2f2f2;
-    /* Cor laranja para o título */
-    margin-bottom: 15px;
-    /* Adiciona margem inferior ao título */
+    text-align: center; /* Alinha o título principal ao centro */
+    font-size: 36px; /* Tamanho da fonte do título */
+    color: #FF5722; /* Cor laranja para o título */
+    margin-bottom: 15px; /* Adiciona margem inferior ao título */
 }
 
 article h2 {
-    text-align: center;
-    /* Alinha o subtítulo ao centro */
-    font-size: 28px;
-    /* Tamanho da fonte do subtítulo */
-    color: #f2f2f2;
-    /* Cor laranja para o subtítulo */
-    margin-bottom: 10px;
-    /* Adiciona margem inferior ao subtítulo */
+    text-align: center; /* Alinha o subtítulo ao centro */
+    font-size: 28px; /* Tamanho da fonte do subtítulo */
+    color: #FF5722; /* Cor laranja para o subtítulo */
+    margin-bottom: 10px; /* Adiciona margem inferior ao subtítulo */
 }
 
 strong {
-    color: #ff6600;
-    /* Deixa o texto em negrito com a cor laranja */
+    color: #FF5722; /* Deixa o texto em negrito com a cor laranja */
 }
 
 /* Estilos para as seções */
 section {
-    background: #333;
-    /* Cor de fundo cinza escuro para a seção */
-    border-radius: 25px;
-    /* Bordas arredondadas */
-    padding: 3em;
-    /* Adiciona 3em de espaço interno */
-    box-shadow: 0px 6px 15px /* #ff6600 */ #f2f2f2;
-    /* Sombra laranja ao redor da seção */
-    margin: 1em auto;
-    /* Margem superior e inferior de 1em, centralizando a seção */
-    display: flex;
-    /* Usando flexbox para disposição dos itens */
-    flex-direction: column;
-    /* Organiza os itens em uma coluna */
-    gap: 2em;
-    /* Espaço entre os blocos dentro da seção */
+    background-color: rgb(0, 0, 0, 0.6); /* Background preto, com transparência 0.6 para se perceber o fundo e ser legível */  
+    border-radius: 25px; /* Bordas arredondadas */    
+    padding: 3em; /* Adiciona 3em de espaço interno */ 
+    box-shadow: 0px 6px 15px /* #FF5722 */ #f2f2f2; /* Sombra laranja ao redor da seção */
+    margin: 1em auto; /* Margem superior e inferior de 1em, centralizando a seção */
+    display: flex; /* Usando flexbox para disposição dos itens */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    /* gap: 1em;  Espaço entre os blocos dentro da seção */
 }
 
 section p {
-    font-size: 18px;
-    /* Tamanho da fonte dos parágrafos dentro da seção */
+    font-size: 18px; /* Tamanho da fonte dos parágrafos dentro da seção */
+    margin: 15px 0; /* Margem superior e inferior de 15px */
+    line-height: 1.8; /* Espaçamento entre as linhas de texto */
+    text-align: justify; /* Alinha o texto justificado */    
     color: #cccccc;
-    /* Cor do texto cinza claro */
-    margin: 15px 0;
-    /* Margem superior e inferior de 15px */
-    line-height: 1.8;
-    /* Espaçamento entre as linhas de texto */
-    text-align: justify;
-    /* Alinha o texto justificado */
 }
 
 section h3 {
-    text-align: center;
-    /* Alinha o cabeçalho da seção ao centro */
-    color: #ff6600;
-    /* Cor laranja para o cabeçalho */
+    text-align: center; /* Alinha o cabeçalho da seção ao centro */
+    color: #FF5722; /* Cor laranja para o cabeçalho */
+}
+
+section ul {
+    list-style-type: none; /* Remove os pontos de bala padrão */
+    padding-left: 20px; /* Adiciona um espaço à esquerda para posicionamento */
+}
+
+section li::before {
+    content: '➔'; /* Usa um símbolo de seta */
+    margin-right: 10px; /* Espaço entre a seta e o texto */
+    font-size: 20px; /* Ajusta o tamanho da seta */
+    color: #FF5722; /* Ajusta a cor da seta */
 }
 
 /* Estilos para os blocos dentro das seções */
 .block {
-    display: flex;
-    /* Flexbox para alinhamento dos itens */
-    align-items: center;
-    /* Alinha os itens verticalmente ao centro */
+    display: flex; /* Flexbox para alinhamento dos itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
     flex-wrap: nowrap;
     align-content: center;
-    gap: 1em;
-    /* Espaço entre a imagem e o texto */
-    text-align: left;
-    /* Alinha o texto à esquerda */
+    gap: 1em; /* Espaço entre a imagem e o texto */
+    text-align: left; /* Alinha o texto à esquerda */    
 }
 
 .block img {
-    max-width: 150px;
-    /* Largura da imagem */
-    height: auto;
-    /* Mantém a proporção da imagem */
-    border-radius: 5px;
-    /* Bordas arredondadas para a imagem */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    /* Sombra suave ao redor da imagem */
+    max-width: 200px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);  Sombra suave ao redor da imagem */
 }
 
 .block p {
-    font-size: 18px;
-    /* Tamanho da fonte dos parágrafos dentro da seção */
-    color: #cccccc;
-    /* Cor do texto cinza claro */
-    margin: 15px 0 15px 30px;
-    /* Margem superior e inferior de 15px */
-    line-height: 1.8;
-    /* Espaçamento entre as linhas de texto */
-    text-align: justify;
-    /* Alinha o texto justificado */
+    font-size: 18px; /* Tamanho da fonte dos parágrafos dentro da seção */
+    color: #cccccc; /* Cor do texto cinza claro */
+    margin: 15px 0 15px 30px; /* Margem superior e inferior de 15px */
+    line-height: 1.8; /* Espaçamento entre as linhas de texto */
+    text-align: justify; /* Alinha o texto justificado */
 }
 
 .block a {
-    color: #ff6600;
+    color: #FF5722;
     text-decoration: none;
 }
 
@@ -348,102 +253,76 @@ section h3 {
 
 /*  Rodapé  */
 footer {
-    text-align: center;
-    /* Alinha o texto ao centro */
-    font-weight: bold;
-    /* Define o texto do rodapé como em negrito */
-    background: #000;
-    /* Cor de fundo preta */
-    padding: 15px;
-    /* Espaçamento interno */
-    color: #cccccc;
-    /* Cor do texto no rodapé */
-    border-top: 3px solid #ff6600;
-    /* Borda superior laranja para o rodapé */
+    text-align: center;  /* Alinha o texto ao centro */
+    font-weight: bold; /* Define o texto do rodapé como em negrito */
+    background: #000; /* Cor de fundo preta */
+    padding: 15px; /* Espaçamento interno */
+    color: #cccccc; /* Cor do texto no rodapé */
+    border-top: 3px solid #FF5722; /* Borda superior laranja para o rodapé */
 }
 
 footer p {
-    margin: 0;
-    /* Remove a margem do parágrafo dentro do rodapé */
+    margin: 0; /* Remove a margem do parágrafo dentro do rodapé */
 }
-
 
 /* Estilos para as imagens  */
 img {
-    border-radius: 10px;
-    /* Bordas arredondadas nas imagens */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    /* Sombra suave ao redor da imagem */
-    max-width: 100%;
-    /* Limita a largura das imagens ao tamanho máximo disponível */
-    max-height: auto;
-    /* Mantém a proporção da altura da imagem */
-}
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  Sombra suave ao redor da imagem */
+    max-width: 100%; /* Limita a largura das imagens ao tamanho máximo disponível */
+    max-height: auto; /* Mantém a proporção da altura da imagem */
+} 
 
 figcaption {
-    text-align: center;
-    /* Alinha as legendas das imagens ao centro */
+    font-size: 10px;
+    text-align: center; /* Alinha as legendas das imagens ao centro */
 }
-
 
 /* Estilo para o logotipo */
 .logo {
-    min-width: 100px;
-    /* Garante que a imagem ocupe toda a largura disponível */
-    height: auto;
-    /* Ajusta a altura automaticamente para manter a proporção */
-    border-radius: 10px;
-    /* Arredonda os cantos da imagem */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    /* Aplica uma sombra na imagem */
-    transition: transform 0.3s ease;
-    /* Animação de transição para o efeito hover */
+    min-width: 100px; /* Garante que a imagem ocupe toda a largura disponível */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    border-radius: 10px; /* Arredonda os cantos da imagem */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Aplica uma sombra na imagem */
+    transition: transform 0.3s ease; /* Animação de transição para o efeito hover */
 }
 
 /* Efeito de zoom ao passar o mouse sobre o logotipo */
 .logo:hover {
-    transform: scale(1.2);
-    /* Aumenta o tamanho da imagem quando o mouse está sobre ela */
+    transform: scale(1.2); /* Aumenta o tamanho da imagem quando o mouse está sobre ela */
 }
 
 /* Estilo para o quiz */
 #quiz {
-    max-width: 40%;
-    /* Limita a largura máxima do quiz a 40% da largura disponível */
+    max-width: 70%; /* Limita a largura máxima do quiz a 40% da largura disponível */
+    color: #ccc;
 }
 
 /* Estilo para os inputs do quiz */
 #quiz input {
-    cursor: pointer;
-    /* Muda o cursor para um ponteiro ao passar sobre os inputs */
+    cursor: pointer; /* Muda o cursor para um ponteiro ao passar sobre os inputs */
 }
 
 /* Estilo da resposta correta/errada */
 .correct-answer {
-    display: none;
-    /* Esconde a resposta correta ou errada inicialmente */
+    display: none; /* Esconde a resposta correta ou errada inicialmente */
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    font-weight: bold;
-    /* Deixa o texto mais em negrito */
+    font-weight: bold; /* Deixa o texto mais em negrito */
 }
 
 /* Resposta correta (verde) */
 .correct-answer.correct {
-    background-color: #4caf50;
-    /* Cor de fundo verde para indicar resposta correta */
-    color: #fff;
-    /* Cor do texto branca */
+    background-color: rgba(76, 175, 80, 0.75); /* Cor de fundo verde para indicar resposta correta */
+    color: #fff; /* Cor do texto branca */
 }
 
 /* Resposta incorreta (vermelho) */
 .correct-answer.incorrect {
-    background-color: #f44336;
-    /* Cor de fundo vermelha para indicar resposta incorreta */
-    color: #fff;
-    /* Cor do texto branca */
+    background-color: rgba(244, 67, 54, 0.75); /* Cor de fundo vermelha para indicar resposta incorreta */
+    color: #fff; /* Cor do texto branca */
 }
 
 /* Exibe a resposta correta/errada quando o input de rádio é selecionado */
@@ -453,57 +332,39 @@ input[type="radio"]:checked+label+.correct-answer {
 
 /* Impede a interação com outros inputs de rádio após selecionar um */
 section:has(input[type="radio"]:checked) input[type="radio"] {
-    pointer-events: none;
-    /* Impede a interação com outros inputs */
-    opacity: 0;
-    /* Torna os inputs invisíveis */
-    cursor: not-allowed;
-    /* Exibe um cursor de "não permitido" */
+    pointer-events: none; /* Impede a interação com outros inputs */
+    opacity: 0; /* Torna os inputs invisíveis */
+    cursor: not-allowed; /* Exibe um cursor de "não permitido" */
 }
 
 /* Estilo para os blocos da linha do tempo */
 .timeline-block {
-    display: flex;
-    /* Exibe os elementos como flex containers */
-    align-items: center;
-    /* Alinha os itens verticalmente ao centro */
-    gap: 1em;
-    /* Espaço de 1em entre imagem e texto */
-    text-align: left;
-    /* Alinha o texto à esquerda */
-}
+    display: flex; /* Exibe os elementos como flex containers */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 1em; /* Espaço de 1em entre imagem e texto */
+    text-align: left; /* Alinha o texto à esquerda */
+} 
 
 /* Estilo das imagens dentro dos blocos da linha do tempo */
 .timeline-block img {
-    width: 350px;
-    /* Define a largura das imagens */
-    height: auto;
-    /* Ajusta a altura automaticamente para manter a proporção */
-    border-radius: 5px;
-    /* Arredonda os cantos das imagens */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    /* Aplica uma sombra nas imagens */
+    width: 350px; /* Define a largura das imagens */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    border-radius: 5px; /* Arredonda os cantos das imagens */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Aplica uma sombra nas imagens */
 }
 
 /* Estilo específico para a classe 'historia' */
 .historia {
-    margin: 20px auto;
-    /* Adiciona uma margem à esquerda */
+    margin: 20px auto; /* Adiciona uma margem à esquerda */
 }
 
 /* Estilo para a linha do tempo fixa à direita */
 aside.timeline {
-    padding: 10px;
-    /* Adiciona preenchimento dentro do aside */
-    position: fixed;
-    /* Fixa a posição na tela */
-    left: 5px;
-    /* Posiciona à esquerda */
-    top: 50%;
-    /* Posiciona ao meio verticalmente */
-    overflow-y: auto;
-    /* Permite o scroll vertical */
-    /* background-color: rgba(255, 255, 255, 0.5); */
+    padding: 10px; /* Adiciona preenchimento dentro do aside */
+    position: fixed; /* Fixa a posição na tela */
+    left: 5px; /* Posiciona à esquerda */
+    top: 50%; /* Posiciona ao meio verticalmente */
+    overflow-y: auto; /* Permite o scroll vertical */
     padding: 10px 0;
     text-align: center;
     border-radius: 15px;
@@ -512,41 +373,29 @@ aside.timeline {
 
 /* Estilo para os links da linha do tempo */
 aside.timeline ul {
-    list-style: none;
-    /* Remove os marcadores da lista */
-    text-align: center;
-    /* Centraliza o texto dos links */
+    list-style: none; /* Remove os marcadores da lista */
+    text-align: center; /* Centraliza o texto dos links */
 }
 
 aside.timeline ul li {
-    margin-bottom: 10px;
-    /* Adiciona um espaçamento abaixo de cada item da lista */
+    margin-bottom: 10px; /* Adiciona um espaçamento abaixo de cada item da lista */
 }
 
 /* Estilo dos links da linha do tempo */
 aside.timeline ul li a {
-    color: #f2f2f2;
-    /* Cor de texto branca */
-    text-decoration: none;
-    /* Remove o sublinhado dos links */
-    font-size: 16px;
-    /* Define o tamanho da fonte */
-    padding: 8px 15px;
-    /* Adiciona preenchimento dentro do link */
-    border-radius: 5px;
-    /* Arredonda os cantos do link */
-    transition: all 0.3s ease;
-    /* Animação suave para todos os estados */
-    position: relative;
-    /* Define a posição relativa para efeitos de sobreposição */
+    color: #f2f2f2; /* Cor de texto branca */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px; /* Define o tamanho da fonte */
+    padding: 8px 15px; /* Adiciona preenchimento dentro do link */
+    border-radius: 5px; /* Arredonda os cantos do link */
+    transition: all 0.3s ease; /* Animação suave para todos os estados */
+    position: relative; /* Define a posição relativa para efeitos de sobreposição */
 }
 
 /* Efeito de hover nos links */
 aside.timeline ul li a:hover {
-    background-color: #f1f1f1;
-    /* Cor de fundo laranja para efeito de hover */
-    color: #000;
-    /* Cor do texto preta no hover */
+    background-color: #f1f1f1; /* Cor de fundo laranja para efeito de hover */
+    color: #000; /* Cor do texto preta no hover */
 }
 
 /* Hidden Checkbox */
@@ -570,6 +419,15 @@ aside.timeline ul li a:hover {
 .li-about {
     list-style: none;
 }
+
+.li-about a{
+    color:#f2f2f2;
+}
+
+.li-about a :hover{
+    color:#FF5722;
+}
+
 .arrow div:nth-child(1) {
         transform: rotate(45deg) translate(4px, 0px);
         margin-left: 12px;
@@ -580,29 +438,18 @@ aside.timeline ul li a:hover {
 }
 
 /* Quando a largura do monitor for inferior a 1024px */
-@media (max-width:
-    /*600px*/
-    1024px) {
+@media (max-width: 1024px) {
 
     /* Estilo para as barras do menu hamburguer */
     .menu-icon div {
-        width: 30px;
-        /* Define a largura das barras */
-        height: 4px;
-        /* Define a altura das barras */
-        background-color: #f1f1f1;
-        /* Cor branca para as barras */
+        width: 30px; /* Define a largura das barras */
+        height: 4px; /* Define a altura das barras */
+        background-color: #f1f1f1; /* Cor branca para as barras */
     }
 
     /* Exibe o menu quando o checkbox está marcado */
-    #menu-toggle:checked+.menu-icon+.nav-right {
-        display: block;
-        /* Exibe o menu */
-    }
-
-    #menu-toggle-2:checked+.menu-icon+.topics {
-        display: block;
-        /* Exibe o menu */
+    #menu-toggle:checked+.menu-icon+.nav-right, #menu-toggle-2:checked+.menu-icon+.topics {
+        display: block; 
     }
 
     /* Menu Icon Styles */
@@ -619,11 +466,10 @@ aside.timeline ul li a:hover {
     .menu {
         display: none;
         position: absolute;
-        top: 90px;
-        right: 0;
+        top: 80px;
+        right: 10px;
         max-width: 300px;
-        background-color: rgba(255, 255, 255, 0.5);
-        /* background-color: rgba(255, 102, 0, 0.2); */
+        background-color: rgba(0, 0, 0, 0.75);
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         padding: 10px 0;
         text-align: center;
@@ -639,15 +485,19 @@ aside.timeline ul li a:hover {
     }
 
     .menu a:hover {
-        background-color: #f1f1f1;
+        background-color: #FF5722;
+        transition: none;
+        font-size:18px;
+    }
+
+    .menu a:hover.active {
+        background-color: white;
+        transition: none;
+        font-size:18px;
     }
 
     /* Show Menu on Checkbox Toggle */
-    #menu-toggle:checked~.menu {
-        display: block;
-    }
-
-    #menu-toggle-2:checked~.menu {
+    #menu-toggle:checked~.menu,#menu-toggle-2:checked~.menu {
         display: block;
     }
 
@@ -672,57 +522,37 @@ aside.timeline ul li a:hover {
         margin-left: 12px;
     }
 
-/*     #menu-toggle-2:checked+.menu-icon div:nth-child(2) {
-        opacity: 0;
-    } */
-
     #menu-toggle-2:checked+.menu-icon div:nth-child(2) {
         transform: rotate(45deg) translate(-5px, -30px);
         margin-left: 12px;
     }
 
     .nav-right {
-        display: none;
-        /* Esconde a navegação à direita */
-        width: 100%;
-        /* Ocupa toda a largura disponível */
-        text-align: center;
-        /* Centraliza o conteúdo */
-        margin-top: 10px;
-        /* Adiciona uma margem superior */
+        display: none; /* Esconde a navegação à direita */
     }
 
     .topics {
-        display: none;
-        /* Esconde a navegação à direita */
-        width: 100%;
-        /* Ocupa toda a largura disponível */
-        text-align: center;
-        /* Centraliza o conteúdo */
-        margin-top: 10px;
-        /* Adiciona uma margem superior */
+        display: none; /* Esconde a navegação à direita */
+        width: 100%; /* Ocupa toda a largura disponível */
+        text-align: center; /* Centraliza o conteúdo */
+        margin-top: 10px; /* Adiciona uma margem superior */
     }
 
     .menu-icon {
-        display: flex;
-        /* Exibe o menu hamburguer para dispositivos móveis */
+        display: flex; /* Exibe o menu hamburguer para dispositivos móveis */
     }
 
     #menu-toggle:checked+.menu-icon+.nav-right {
-        display: block;
-        /* Exibe a navegação quando o menu hamburguer for ativado */
+        display: block; /* Exibe a navegação quando o menu hamburguer for ativado */
     }
 
     #menu-toggle-2:checked+.menu-icon+.topics {
-        display: block;
-        /* Exibe a navegação quando o menu hamburguer for ativado */
+        display: block; /* Exibe a navegação quando o menu hamburguer for ativado */
     }
 
     .block {
-        display: block;
-        /* Exibe os blocos como elementos de bloco */
-        text-align: center;
-        /* Centraliza o texto dentro dos blocos */
+        display: block; /* Exibe os blocos como elementos de bloco */
+        text-align: center; /* Centraliza o texto dentro dos blocos */
     }
 
     .block img {
@@ -730,18 +560,15 @@ aside.timeline ul li a:hover {
     }
 
     #quiz {
-        max-width: 80%;
-        /* Limita a largura máxima do quiz para 80% */
+        max-width: 80%; /* Limita a largura máxima do quiz para 80% */
     }
 
     article {
-        max-width: 90%;
-        /* Ajusta a largura máxima do artigo para 90% */
+        max-width: 90%; /* Ajusta a largura máxima do artigo para 90% */
     }
 
     section {
-        padding: 1em;
-        /* Diminui o preenchimento das seções */
+        padding: 1em; /* Diminui o preenchimento das seções */
     }
 
     aside.timeline {
@@ -758,7 +585,6 @@ aside.timeline ul li a:hover {
 
     .backgroud {
         background-color: rgba(255, 255, 255, 0.5);
-        /* background-color: rgba(255, 102, 0, 0.2); */
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         padding: 10px 0;
         text-align: center;
