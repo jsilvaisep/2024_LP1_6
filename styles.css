@@ -4,6 +4,13 @@
     padding: 0; /* Remove o padding (espaçamento interno) de todos os elementos */
 }
 
+/* Variáveis globais */ 
+:root {
+    --laranja-amd: #FF5722; 
+    --cor-texto: #ccc;
+    --background-escuro: #1a1a1a;
+}
+
 html,body {
     display: flex; /* Define o conteúdo do site como um container flexível */    
     flex-direction: column; /* Organiza os elementos de forma vertical (em coluna) */
@@ -26,8 +33,8 @@ main {
 /* Propriedades do Body */
 body {
     font-family: 'Roboto', sans-serif; /* Define a fonte como 'Roboto', com sans-serif como fallback */
-    background-color: #1a1a1a; /* Cor de fundo do body: cinza escuro */
-    color: #f2f2f2; /* Cor do texto: branco/clarinho */
+    background-color: var(--background-escuro); /* Cor de fundo do body: cinza escuro */
+    color: var(--cor-texto); /* Cor do texto: branco/clarinho */
     line-height: 1.8; /* Define a altura da linha do texto como 1.8 para melhorar a legibilidade */
     overflow-x: hidden; /* Impede que o conteúdo transborde horizontalmente */
     min-width: 410px;
@@ -37,8 +44,8 @@ body {
 header {
     background: linear-gradient(90deg, #000, #222); /* Gradiente de fundo de preto a cinza escuro (90 graus) */
     padding: 15px 20px; /* Define o padding (espaçamento interno) em cima/embaixo de 15px e à esquerda/direita de 20px */
-    border-bottom: 3px solid #FF5722; /* Borda inferior laranja para dar destaque */
-    box-shadow: 0px 6px 15px #FF5722; /* Sombra preta com 4px de desfoque vertical, 10px de espalhamento */
+    border-bottom: 3px solid var(--laranja-amd); /* Borda inferior laranja para dar destaque */
+    box-shadow: 0px 6px 15px var(--laranja-amd); /* Sombra preta com 4px de desfoque vertical, 10px de espalhamento */
     position: sticky; /* Faz com que o cabeçalho permaneça fixo no topo ao rolar a página */
     top: 0; /* Defina a margem superior como 0, fixando o cabeçalho no topo */
     display: flex; /* Define o container flexível para os elementos dentro do header */
@@ -77,12 +84,12 @@ nav ul {
 ul {
     font-family: 'Roboto', sans-serif; /* Define a fonte como 'Roboto' para os itens da lista */
     font-size: 18px; /* Tamanho da fonte dos itens da lista */
-    color: #f2f2f2; /* Cor cinza claro para o texto da lista */
+    color: var(--cor-texto); /* Cor cinza claro para o texto da lista */
 }
 
 /* Estilos específicos para a classe ul-inovacoes */
 .ul-inovacoes {
-    color: #f2f2f2; /* Cor do texto cinza claro */
+    color: var(--cor-texto); /* Cor do texto cinza claro */
     margin: 15px 0; /* Margem de 15px superior e inferior */
     line-height: 1.8; /* Define a altura da linha como 1.8 para maior espaçamento */
     text-align: justify; /* Alinha o texto de forma justificada */
@@ -92,7 +99,7 @@ ul {
 
 li {
     font-size: 18px;
-    color: #cccccc; 
+    color: white; 
     font-family: 'Roboto', sans-serif;
 }
 
@@ -106,7 +113,7 @@ li {
 
 /* Estilos para os links dentro do menu à direita */
 .nav-right a {
-    color: #f2f2f2; /* Cor do texto dos links como branco */
+    color: white; /* Cor do texto dos links como branco */
     text-decoration: none; /* Remove o sublinhado dos links */
     font-size: 16px; /* Tamanho da fonte dos links */
     transition: color 0.3s ease; /* Transição suave para a cor do texto */    
@@ -119,7 +126,7 @@ li {
 
 /* Estilos para os links dentro da barra de navegação */
 nav a {
-    color: #FF5722; /* Cor de texto clara para os links */
+    color: var(--laranja-amd); /* Cor de texto clara para os links */
     text-decoration: none; /* Remove o sublinhado dos links */
     font-size: 16px; /* Tamanho da fonte dos links */
     padding: 8px 15px; /* Padding interno de 8px verticalmente e 15px horizontalmente */
@@ -132,24 +139,24 @@ nav a {
 /* Efeitos ao passar o mouse sobre os links */
 nav a:hover {
     font-size:20px;
-    color: #FF5722; /* Cor preta para o texto ao passar o mouse */
+    color: var(--laranja-amd); /* Cor preta para o texto ao passar o mouse */
     transition: all 0.3s ease;
 }
 
 /* Efeitos ao passar o mouse sobre o logo à esquerda */
 .nav-left a:hover {
     background-color: transparent; /* Fundo transparente ao passar o mouse */
-    color: #f2f2f2; /* Cor branca para o texto ao passar o mouse */
+    color: var(--cor-texto); /* Cor branca para o texto ao passar o mouse */
 }
 
 nav a:hover.active{
-    color: #f2f2f2;
+    color: var(--cor-texto);
 }
 
 /* Estilos para o link ativo */
 .active {
-    background-color: #FF5722; /* Fundo laranja para o link ativo */
-    color: #f2f2f2;  /* Cor preta para o texto do link ativo */
+    background-color: var(--laranja-amd); /* Fundo laranja para o link ativo */
+    color: var(--cor-texto);  /* Cor preta para o texto do link ativo */
 }
 
 /* Conteúdo principal */
@@ -163,19 +170,19 @@ article {
 article h1 {
     text-align: center; /* Alinha o título principal ao centro */
     font-size: 36px; /* Tamanho da fonte do título */
-    color: #FF5722; /* Cor laranja para o título */
+    color: var(--laranja-amd); /* Cor laranja para o título */
     margin-bottom: 15px; /* Adiciona margem inferior ao título */
 }
 
 article h2 {
     text-align: center; /* Alinha o subtítulo ao centro */
     font-size: 28px; /* Tamanho da fonte do subtítulo */
-    color: #FF5722; /* Cor laranja para o subtítulo */
+    color: var(--laranja-amd); /* Cor laranja para o subtítulo */
     margin-bottom: 10px; /* Adiciona margem inferior ao subtítulo */
 }
 
 strong {
-    color: #FF5722; /* Deixa o texto em negrito com a cor laranja */
+    color: var(--laranja-amd); /* Deixa o texto em negrito com a cor laranja */
 }
 
 /* Estilos para as seções */
@@ -183,11 +190,10 @@ section {
     background-color: rgb(0, 0, 0, 0.6); /* Background preto, com transparência 0.6 para se perceber o fundo e ser legível */  
     border-radius: 25px; /* Bordas arredondadas */    
     padding: 3em; /* Adiciona 3em de espaço interno */ 
-    box-shadow: 0px 6px 15px /* #FF5722 */ #f2f2f2; /* Sombra laranja ao redor da seção */
+    box-shadow: 0px 6px 15px var(--cor-texto); /* Sombra laranja ao redor da seção */
     margin: 1em auto; /* Margem superior e inferior de 1em, centralizando a seção */
     display: flex; /* Usando flexbox para disposição dos itens */
     flex-direction: column; /* Organiza os itens em uma coluna */
-    /* gap: 1em;  Espaço entre os blocos dentro da seção */
 }
 
 section p {
@@ -195,12 +201,12 @@ section p {
     margin: 15px 0; /* Margem superior e inferior de 15px */
     line-height: 1.8; /* Espaçamento entre as linhas de texto */
     text-align: justify; /* Alinha o texto justificado */    
-    color: #cccccc;
+    color: var(--cor-texto);
 }
 
 section h3 {
     text-align: center; /* Alinha o cabeçalho da seção ao centro */
-    color: #FF5722; /* Cor laranja para o cabeçalho */
+    color: var(--laranja-amd); /* Cor laranja para o cabeçalho */
 }
 
 section ul {
@@ -212,7 +218,7 @@ section li::before {
     content: '➔'; /* Usa um símbolo de seta */
     margin-right: 10px; /* Espaço entre a seta e o texto */
     font-size: 20px; /* Ajusta o tamanho da seta */
-    color: #FF5722; /* Ajusta a cor da seta */
+    color: var(--laranja-amd); /* Ajusta a cor da seta */
 }
 
 /* Estilos para os blocos dentro das seções */
@@ -234,19 +240,19 @@ section li::before {
 
 .block p {
     font-size: 18px; /* Tamanho da fonte dos parágrafos dentro da seção */
-    color: #cccccc; /* Cor do texto cinza claro */
+    color: var(--cor-texto); /* Cor do texto cinza claro */
     margin: 15px 0 15px 30px; /* Margem superior e inferior de 15px */
     line-height: 1.8; /* Espaçamento entre as linhas de texto */
     text-align: justify; /* Alinha o texto justificado */
 }
 
 .block a {
-    color: #FF5722;
+    color: var(--laranja-amd);
     text-decoration: none;
 }
 
 .block a:hover {
-    color: #f2f2f2;
+    color: var(--cor-texto);
 }
 
 /*  Rodapé  */
@@ -255,8 +261,8 @@ footer {
     font-weight: bold; /* Define o texto do rodapé como em negrito */
     background: #000; /* Cor de fundo preta */
     padding: 15px; /* Espaçamento interno */
-    color: #cccccc; /* Cor do texto no rodapé */
-    border-top: 3px solid #FF5722; /* Borda superior laranja para o rodapé */
+    color: var(--cor-texto); /* Cor do texto no rodapé */
+    border-top: 3px solid var(--laranja-amd); /* Borda superior laranja para o rodapé */
 }
 
 footer p {
@@ -266,7 +272,6 @@ footer p {
 /* Estilos para as imagens  */
 img {
     border-radius: 10px; /* Bordas arredondadas nas imagens */
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  Sombra suave ao redor da imagem */
     max-width: 100%; /* Limita a largura das imagens ao tamanho máximo disponível */
     max-height: auto; /* Mantém a proporção da altura da imagem */
 } 
@@ -365,7 +370,7 @@ aside.timeline ul li {
 
 /* Estilo dos links da linha do tempo */
 aside.timeline ul li a {
-    color: #f2f2f2; /* Cor de texto branca */
+    color: white; /* Cor de texto branca */
     text-decoration: none; /* Remove o sublinhado dos links */
     border-radius: 5px; /* Arredonda os cantos do link */
     transition: all 0.3s ease; /* Animação suave para todos os estados */
@@ -376,8 +381,8 @@ aside.timeline ul li a {
 
 /* Efeito de hover nos links */
 aside.timeline ul li a:hover {
-    background-color: #FF5722; /* Cor de fundo laranja para efeito de hover */
-    color: #f2f2f2; /* Cor do texto preta no hover */
+    background-color: var(--laranja-amd); /* Cor de fundo laranja para efeito de hover */
+    color: var(--cor-texto); /* Cor do texto preta no hover */
 }
 
 /* Hidden Checkbox */
@@ -407,7 +412,7 @@ aside.timeline ul li a:hover {
 }
 
 .li-about a :hover {
-    color:#FF5722;
+    color:var(--laranja-amd);
 }
 
 .arrow div:nth-child(1) {
@@ -473,7 +478,7 @@ aside.timeline ul li a:hover {
     }
 
     .menu a:hover {
-        background-color: #FF5722;
+        background-color: var(--laranja-amd);
         color: white; 
         transition: none;
         font-size:18px;
@@ -570,7 +575,7 @@ aside.timeline ul li a:hover {
     }
 
     aside.timeline a:hover {
-        background-color: #FF5722;
+        background-color: var(--laranja-amd);
         color: white; 
         transition: none;
         font-size:18px;
@@ -581,7 +586,6 @@ aside.timeline ul li a:hover {
         transition: none;
         font-size:18px;
     }
-
 
     .backgroud {
         background-color: rgba(0, 0, 0, 0.75);
