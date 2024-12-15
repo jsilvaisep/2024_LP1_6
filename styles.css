@@ -272,7 +272,7 @@ img {
 } 
 
 figcaption {
-    font-size: 10px;
+    font-size: 14px;
     text-align: center; /* Alinha as legendas das imagens ao centro */
 }
 
@@ -414,9 +414,15 @@ aside.timeline ul li a:hover {
         transform: rotate(45deg) translate(5px, 0px);
         margin-left: 12px;
 }
+
 .arrow div:nth-child(2) {
         transform: rotate(-45deg) translate(33px, 0px);
         margin-left: 12px;
+}
+
+/* Esconde o checkbox que controla o menu hamburguer */
+#menu-toggle {
+    display: none;
 }
 
 /* Quando a largura do monitor for inferior a 1024px */
@@ -584,9 +590,4 @@ aside.timeline ul li a:hover {
         text-align: center;
         border-radius: 15px;
     }
-}
-
-/* Esconde o checkbox que controla o menu hamburguer */
-#menu-toggle {
-    display: none;
 }
