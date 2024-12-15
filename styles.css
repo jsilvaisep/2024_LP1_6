@@ -195,7 +195,9 @@ section {
     display: flex; /* Usando flexbox para disposição dos itens */
     flex-direction: column; /* Organiza os itens em uma coluna */
 }
-
+section:hover{
+    background-color: rgb(0, 0, 0, 1);
+}
 section p {
     font-size: 18px; /* Tamanho da fonte dos parágrafos dentro da seção */
     margin: 15px 0; /* Margem superior e inferior de 15px */
