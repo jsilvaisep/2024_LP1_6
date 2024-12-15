@@ -1,97 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Joaquim Silva, Peter Oliveira, Rui Maia, Hassen Leandro">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-    <title>Inovações Tecnológicas da AMD</title>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <ul class="nav-left">
-                <li><a href="index.html" class="custom-button"><img class="logo" src="images/amd.png" alt="Logotipo da AMD"></a></li>
-            </ul>
-            <ul class="nav-right">
-                <li><a href="inicio.html">Início da AMD</a></li>
-                <li><a href="anos90.html">Década de 1990</a></li>
-                <li><a href="anos2000.html">Anos 2000</a></li>
-                <li><a href="actual.html">Arquitetura Zen</a></li>
-                <li><a href="inovacoes.html" class="active">Inovações Tecnológicas</a></li>
-                <li><a href="mercado.html">Mercado Atual</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article id="inovacoes">
-            <h2>Inovações Tecnológicas da AMD</h2>
-            <br>
-            <section>
-                <p>A AMD (Advanced Micro Devices) é reconhecida por sua capacidade de inovar e transformar o setor de tecnologia, marcando presença em mercados como computação, jogos e data centers. A seguir, destacam-se as principais inovações tecnológicas da empresa:</p>
-
-                <h3>1. Processadores Ryzen e Arquitetura Zen</h3>
-                <p>Com o lançamento da linha <strong>Ryzen</strong> em 2017, baseada na arquitetura <strong>Zen</strong>, a AMD redefiniu os padrões de desempenho em processadores para desktops e servidores. Esses processadores introduziram:</p>
-                <ul>
-                    <li>Maior desempenho por watt.</li>
-                    <li>Multithreading Simultâneo (SMT) para maior eficiência em tarefas paralelas.</li>
-                    <li>Custo-benefício superior em comparação com a concorrência.</li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Joaquim Silva, Peter Oliveira, Rui Maia, Hassen Leandro" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Inovações Tecnológicas da AMD" />
+        <meta name="keywords" content="AMD, microprocessadores, Ryzen, história da AMD" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+        <title>Inovações Tecnológicas da AMD</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-left">
+                    <li><a href="index.html" class="custom-button"><img class="logo" src="images/amd.png" alt="Logotipo da AMD"/></a></li>
                 </ul>
-                <p>A evolução da arquitetura Zen (Zen 2, Zen 3 e Zen 4) trouxe avanços contínuos, culminando nos processadores <strong>Ryzen Threadripper</strong>, ideais para computação intensiva e criação de conteúdo.</p>
-            </section>
-            <br>
-            <section>
-                <h3>2. GPUs Radeon e Tecnologias Gráficas</h3>
-                <p>A AMD inovou com suas GPUs <strong>Radeon</strong>, introduzindo tecnologias como:</p>
-                <ul>
-                    <li><strong>RDNA (Radeon DNA):</strong> Uma arquitetura gráfica eficiente e poderosa.</li>
-                    <li><strong>FidelityFX Super Resolution (FSR):</strong> Uma solução de upscaling para melhorar a qualidade visual em jogos.</li>
-                    <li><strong>Ray Tracing em tempo real:</strong> Renderização de luz e sombras realistas.</li>
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <ul class="nav-right menu">
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="inovacoes.html" class="active">Inovações Tecnológicas</a></li>
+                    <li><a href="mercado.html">Mercado Atual</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
                 </ul>
-            </section>
-            <br>
-            <section>
-                <h3>3. Chiplets e Design Modular</h3>
-                <p>A abordagem de design baseada em <strong>chiplets</strong> revolucionou a fabricação de processadores, permitindo:</p>
-                <ul>
-                    <li>Redução de custos de produção.</li>
-                    <li>Maior escalabilidade e flexibilidade no design de chips.</li>
-                    <li>Processadores com mais núcleos e threads, como a linha <strong>Ryzen 9</strong> e <strong>EPYC</strong>.</li>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1>Inovações Tecnológicas da AMD</h1>
+                <section id="Ryzen">
+                    <p>A AMD (Advanced Micro Devices) é reconhecida por sua capacidade de inovar e transformar o setor de tecnologia, marcando presença em mercados como
+                    computação, jogos e data centers. A seguir, destacam-se as principais inovações tecnológicas da empresa:</p>
+                    <h2>Processadores Ryzen e Arquitetura Zen</h2>
+                    <div class="block">
+                        <figure>
+                            <img src="images/9800.png" alt="Ryzen 9800X3D" />
+                            <figcaption>Ryzen 9800X3D</figcaption>
+                        </figure>
+                        <div>
+                            <p>Com o lançamento da linha <strong>Ryzen</strong> em 2017, baseada na arquitetura <strong>Zen</strong>, a AMD redefiniu os padrões de desempenho em
+                            processadores para desktops e servidores. Esses processadores introduziram:</p>
+                            <ul class="ul-inovacoes">
+                                <li>Maior desempenho por watt.</li>
+                                <li>Multithreading Simultâneo (SMT) para maior eficiência em tarefas paralelas.</li>
+                                <li>Custo-benefício superior em comparação com a concorrência.</li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                    <div class="block">
+                        <figure>
+                            <img src="images/threadripper.png" alt="Treadripper 7995WX" />
+                            <figcaption>Treadripper 7995WX</figcaption>
+                        </figure>
+                        <p>A evolução da arquitetura Zen (Zen 2, Zen 3 e Zen 4) trouxe avanços contínuos, culminando nos processadores <strong>Ryzen Threadripper</strong>, ideais para
+                        computação intensiva e criação de conteúdo.</p>
+                    </div>
+                </section>
+                <br />
+                <section id="GPU">
+                    <h2>GPUs Radeon e Tecnologias Gráficas</h2>
+                    <p>A <strong>ATI Technologies Inc.</strong> foi uma empresa canadiana de tecnologia de semicondutores sediada em Markham, Ontário, especializada no
+                    desenvolvimento de unidades de processamento gráfico (GPUs) e chipsets. Fundada em 1985, a empresa tornou-se pública em 1993 e foi
+                    adquirida pela <strong>AMD em 2006</strong>. Como uma grande empresa de semicondutores sem fábrica própria (fabless), a <strong>ATI</strong> realizava pesquisa e
+                    desenvolvimento internamente, terceirizando a fabricação e montagem dos seus produtos. Com o declínio e eventual falência da 3dfx
+                    em 2000, a ATI e a sua principal concorrente Nvidia tornaram-se os dois líderes dominantes na indústria de processadores gráficos,
+                    forçando outros fabricantes a ocuparem papéis de nicho.</p>
+                    <p>O nome comercial atribuído ao GPU pela <strong>AMD/ATI</strong>. Note-se que as marcas registadas da ATI foram substituídas pelas marcas registadas da AMD,
+                    começando com a série <strong>Radeon HD 6000</strong> para desktops e a série <strong>AMD FirePro</strong> para gráficos profissionais.</p>
+                    <div class="block">
+                        <figure>
+                            <img src="images/7900xtx.png" alt="Radeon 7900 XTX" />
+                            <figcaption>Radeon 7900 XTX</figcaption>
+                        </figure>
+                        <div>
+                            <p>A AMD inovou com suas GPUs <strong>Radeon</strong>, introduzindo tecnologias como:</p>
+                            <ul class="ul-inovacoes">
+                                <li><strong>RDNA (Radeon DNA):</strong> Uma arquitetura gráfica eficiente e poderosa.</li>
+                                <li><strong>FidelityFX Super Resolution (FSR):</strong> Uma solução de upscaling para melhorar a qualidade visual em jogos.</li>
+                                <li><strong>Ray Tracing em tempo real:</strong> Renderização de luz e sombras realistas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <section id="chiplets">
+                    <h2>Chiplets e Design Modular</h2>
+                    <div class="block">
+                        <figure>
+                            <img src="images/chiplet.png" alt="AMD Chiplet Design" />
+                            <figcaption>AMD Chiplet Design</figcaption>
+                        </figure>
+                        <p>O desenvolvimento dos <strong>chiplets</strong> pela AMD uma abordagem revolucionária no design de 
+                            semicondutores que adota uma arquitetura modular. Esta inovação aborda simultaneamente vários desafios tecnológicos 
+                            e de sustentabilidade, como a redução dos impactos ambientais e dos custos de fabrico, ao mesmo tempo
+                            que aumenta o desempenho computacional e a eficiência energética. Em vez de um chip monolítico único,
+                            os engenheiros da AMD reconfiguraram os blocos de construção IP dos componentes utilizando uma 
+                            conectividade flexível e escalável, chamada <strong>Infinity Fabric</strong>. 
+                            Esta inovação criou a base para a nossa Infinity Architecture, permitindo configurar múltiplos 
+                            <strong>chiplets</strong> individuais para escalar núcleos de processamento em inúmeros designs que 
+                            otimizam ainda mais a eficiência energética.</p>
+                    </div>
+                    <ul class="ul-inovacoes">
+                        <li>Redução de custos de produção.</li>
+                        <li>Maior escalabilidade e flexibilidade no design de chips.</li>
+                        <li>Processadores com mais núcleos e threads, como a linha <strong>Ryzen 9</strong> e <strong>EPYC</strong>.</li>
+                    </ul>
+                </section>
+                <br />
+                <section id="servers">
+                    <h2>Soluções para Data Centers e Servidores</h2>
+                    <p>Com os processadores <strong>EPYC</strong>, a AMD conquistou o mercado de data centers, oferecendo:</p>
+                    <div class="block">
+                        <figure>
+                            <img src="images/epyx-9965.png" alt="CPU EPYC 9965 WX" />
+                            <figcaption>CPU EPYC 9965 WX</figcaption>
+                        </figure>
+                        <p>Em 18 de setembro de 2023, a AMD apresentou a linha de processadores Siena de baixo consumo de energia, 
+                            baseada na microarquitetura Zen 4c. Siena suporta até 64 núcleos no novo Socket SP6, que atualmente é 
+                            usado apenas por processadores Siena. Siena usa o mesmo chip de I/O que Bergamo, porém certos recursos, 
+                            como suporte de soquete duplo, são removidos e outros recursos são reduzidos, como a mudança do suporte 
+                            de memória de 12 canais para suporte de memória de 6 canais</p>
+                    </div>
+                    <ul class="ul-inovacoes">
+                        <li>Altíssimo número de núcleos, com até 96 por processador.</li>
+                        <li>Desempenho líder em benchmarks para servidores.</li>
+                        <li>Eficiência energética que reduz custos operacionais.</li>
+                    </ul>
+                </section>
+                <br />
+                <section id="consolas">
+                    <h2>Parcerias no Mercado de Consolas</h2>
+                    <p>A AMD fornece chips para os principais consolas de jogos, como:</p>
+                    <div class="block">
+                        <figure>
+                            <img src="images/steamdeck.png" alt="Valve Steam Deck" />
+                            <figcaption>Valve Steam Deck</figcaption>
+                        </figure>
+                        <ul class="ul-inovacoes">
+                            <li><strong>PlayStation 5</strong></li>
+                            <li><strong>Xbox Series X|S</strong></li>
+                            <li><strong>Steam Deck</strong></li>
+                        </ul>
+                    </div>
+                    <p>Esses consoles utilizam combinações de CPUs baseadas na arquitetura Zen e GPUs RDNA, garantindo gráficos e desempenho de alta qualidade.</p>
+                    <p><strong>Exemplo:</strong> Steam Deck usa APU personalizado:</p>
+                    <ul class="ul-inovacoes">
+                        <li>6 nm AMD APU</li>
+                        <li>CPU: Zen 2 4c/8t, 2.4-3.5GHz (up to 448 GFlops FP32)</li>
+                        <li>GPU: 8 RDNA 2 CUs, 1.6GHz (1.6 TFlops FP32)</li>
+                        <li>APU power: 4-15W</li>
+                    <ul>
+                </section>
+                <br />
+                <section id="HPC">
+                    <h2>Computação Exascale e Futuro</h2>
+                    <p>O <strong>Frontier</strong> representa um grande avanço na computação de alto desempenho (HPC). É o primeiro sistema a alcançar a exaescala, 
+                        um objetivo perseguido por décadas na área da computação. Ele não apenas estabelece um novo padrão de desempenho, mas também 
+                        destaca a importância de eficiência energética e integração de hardware avançado.</p>
+                    <div class="block">
+                        <figure>
+                            <img src="images/Frontier.png" alt="Supercomputador Frontier" />
+                            <figcaption>Supercomputador Frontier</figcaption>
+                        </figure>
+                        <p>Com o <strong>Frontier</strong>, o Oak Ridge National Laboratory mantém sua posição como um dos principais centros de inovação computacional 
+                            no mundo, e a AMD solidifica seu papel como fornecedora líder de tecnologia para HPC. O sistema é um precursor para futuros 
+                            supercomputadores exaescala, prometendo revolucionar áreas científicas e industriais ao longo da próxima década.</p>
+                        </div>
+                </section>
+            </article>
+            <aside class="timeline">
+                <input type="checkbox" id="menu-toggle-2" />
+                <label for="menu-toggle-2" class="menu-icon hide arrow">
+                    <div></div>
+                    <div></div>
+                </label>
+                <ul class="topics backgroud">
+                    <li><a href="#Ryzen" onclick="document.getElementById('menu-toggle-2').checked = false;">Ryzen</a></li>
+                    <li><a href="#GPU" onclick="document.getElementById('menu-toggle-2').checked = false;">GPU</a></li>
+                    <li><a href="#chiplets" onclick="document.getElementById('menu-toggle-2').checked = false;">Chiplets</a></li>
+                    <li><a href="#servers" onclick="document.getElementById('menu-toggle-2').checked = false;">Servidores</a></li>
+                    <li><a href="#consolas" onclick="document.getElementById('menu-toggle-2').checked = false;">Consolas</a></li>
+                    <li><a href="#HPC" onclick="document.getElementById('menu-toggle-2').checked = false;">HPC</a></li>
                 </ul>
-            </section>
-            <br>
-            <section>
-                <h3>4. Soluções para Data Centers e Servidores</h3>
-                <p>Com os processadores <strong>EPYC</strong>, a AMD conquistou o mercado de data centers, oferecendo:</p>
-                <ul>
-                    <li>Altíssimo número de núcleos, com até 96 por processador.</li>
-                    <li>Desempenho líder em benchmarks para servidores.</li>
-                    <li>Eficiência energética que reduz custos operacionais.</li>
-                </ul>
-            </section>
-            <br>
-            <section>
-                <h3>5. Parcerias no Mercado de Consoles</h3>
-                <p>A AMD fornece chips para os principais consoles de videogame, como:</p>
-                <ul>
-                    <li><strong>PlayStation 5</strong></li>
-                    <li><strong>Xbox Series X|S</strong></li>
-                    <li><strong>Steam Deck</strong></li>
-                </ul>
-                <p>Esses consoles utilizam combinações de CPUs baseadas na arquitetura Zen e GPUs RDNA, garantindo gráficos e desempenho de alta qualidade.</p>
-            </section>
-            <br>
-            <section>
-                <h3>6. Computação Exascale e Futuro</h3>
-                <p>Com foco em computação de alto desempenho (HPC), a AMD contribuiu para a criação do <strong>Frontier</strong>, o primeiro supercomputador exascale do mundo, capaz de realizar mais de um quintilhão de cálculos por segundo. Essa tecnologia é essencial para avanços em inteligência artificial e pesquisa científica.</p>
-            </section>
-        </article>
-    </main>
-    <footer>
-        <p>&copy; 2024/2025 Grupo 6 - Projeto 1 - LP1. Todos os direitos reservados.</p>
-    </footer>
-</body>
+            </aside>
+        </main>
+        <footer>
+            <p>&copy; 2024/2025 <strong>Grupo 6 - Projeto 1 - LP1</strong>. Todos os direitos reservados.</p>
+        </footer>
+    </body>
 </html>

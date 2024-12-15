@@ -1,40 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Joaquim Silva, Peter Oliveira, Rui Maia, Hassen Leandro">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>AMD - Início</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="nav-left">
-                <li><a href="index.html" class="custom-button"><img class="logo" src="images/amd.png" alt="Logotipo da AMD"></a></li>
-            </ul>
-            <ul class="nav-right">
-                <li><a href="inicio.html">Início da AMD</a></li>
-                <li><a href="anos90.html">Década de 1990</a></li>
-                <li><a href="anos2000.html">Anos 2000</a></li>
-                <li><a href="actual.html">Arquitetura Zen</a></li>
-                <li><a href="inovacoes.html">Inovações Tecnológicas</a></li>
-                <li><a href="mercado.html">Mercado Atual</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article id="home">
-            <h1>História dos Processadores AMD</h1>
-            <h2>Processadores AMD</h2>
-            <section>
-                <p>Explore os marcos históricos da AMD, desde o início até as inovações atuais.</p>
-            </section>
-        </article>
-    </main>
-    <footer>
-        <p>&copy; 2024/2025 Grupo 6 - Projeto 1 - LP1. Todos os direitos reservados.</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Joaquim Silva, Peter Oliveira, Rui Maia, Hassen Leandro" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Projeto académico sobre a história dos microprocessadores da AMD." />
+        <meta name="keywords" content="AMD, Advanced Micro Devices, Jerry Sanders, Fairchild Semiconductor, Processors, Intel, x86, K5, K6, Athlon, Athlon 64, HyperTransport, Opteron, Bulldozer, Ryzen, Zen, Zen+, Zen 2, Zen 3, Zen 4, EPYC, Xilinx, Advanced Lithography, High-Performance Computing, Intel 8080, Pentium, Pentium III, Technological Competitiveness, Innovation, Zen Architecture, 64-bit, Data Centers">
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+        <title>Início</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-left">
+                    <li><a href="index.html" class="custom-button"><img class="logo" src="images/amd.png" alt="Logotipo da AMD" /></a></li>
+                </ul>
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <ul class="nav-right menu">
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="inovacoes.html">Inovações Tecnológicas</a></li>
+                    <li><a href="mercado.html">Mercado Atual</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1>Explore a Revolução dos Microprocessadores da AMD</h1>
+                <section>
+                    <p>A história da <strong>AMD</strong> (Advanced Micro Devices) é um exemplo inspirador de resiliência e inovação. 
+                    Fundada em 1969 por <strong>Jerry Sanders</strong> e antigos colegas da Fairchild Semiconductor, a empresa começou de forma modesta, a produzir chips de memória e lógica. 
+                    No entanto, o que realmente marcou o seu percurso foi a entrada no competitivo mercado de processadores, onde se tornou uma forte rival da Intel.</p>
+                        
+                    <p>Nos anos 1970, a <strong>AMD</strong> começou por fabricar versões licenciadas de processadores, como o <strong>Intel 8080</strong>, aproveitando essa experiência para se afirmar no mercado.
+                    Em 1982, assinou um acordo com a Intel para produzir processadores baseados na arquitetura x86, que era essencial para os computadores pessoais da época. 
+                    Este acordo deu à <strong>AMD</strong> uma base sólida, mas o fim do mesmo levou a empresa a investir na criação dos seus próprios processadores, garantindo assim a sua independência.</p>
+
+                    <p>O primeiro grande marco aconteceu em 1996 com o lançamento do <strong>K5</strong>, um processador criado para competir com o famoso <strong>Pentium da Intel</strong>. 
+                    Apesar de alguns desafios iniciais, a <strong>AMD</strong> começou a ganhar destaque com a série <strong>K6</strong>, especialmente o <strong>K6-2</strong>, 
+                    que oferecia um bom desempenho a preços mais acessíveis. Contudo, o verdadeiro ponto de viragem aconteceu em 1999 com o lançamento do <strong>Athlon</strong>, 
+                    que suprou o <strong>Pentium III</strong> da Intel e demonstrou que a <strong>AMD</strong> estava preparada para assim inovar e almejar liderar.</p>
+
+                    <p>Em 2003, a <strong>AMD</strong> fez história com o lançamento do <strong>Athlon 64, o primeiro processador x86 de 64 bits para desktops</strong>. 
+                    Este processador trouxe avanços importantes, como o controlador de memória integrado e a tecnologia <strong>HyperTransport</strong>, que tornaram os computadores mais rápidos e eficientes. 
+                    No segmento de servidores, a linha <strong>Opteron</strong> destacou-se pelo desempenho, conquistando a confiança de empresas e centros de dados.</p>
+
+                    <p>Entre 2006 e 2016, a <strong>AMD</strong> enfrentou dificuldades. A <strong>Intel</strong> dominava o mercado com a sua linha <strong>Core</strong>, conhecida pela eficiência e desempenho, 
+                    enquanto a <strong>AMD</strong> cometia erros com a microarquitetura <strong>Bulldozer</strong>, lançada em 2011. 
+                    Os planos apresentados acabaram por não corresponder às expectativas, o que resultou na perda de mercado e em problemas financeiros para a empresa.</p>
+
+                    <p>Em 2017, voltou em força com a linha <strong>Ryzen</strong>, baseada na arquitetura <strong>Zen</strong>.
+                    Estes processadores trouxeram um desempenho impressionante, eficiência energética e preços competitivos. 
+                    Com evoluções constantes, como as arquiteturas <strong>Zen+, Zen 2, Zen 3 e Zen 4</strong>, a <strong>AMD</strong> recuperou a sua posição de destaque no mercado de computadores pessoais e servidores. 
+                    A linha <strong>EPYC</strong>, dedicada a centros de dados, também contribuiu para o sucesso no segmento empresarial.</p>
+
+                    <p>Outro grande passo foi dado em 2020 com a aquisição da <strong>Xilinx</strong>, que permitiu à <strong>AMD</strong> expandir-se para áreas como inteligência artificial e computação de alto desempenho. 
+                    Hoje, com tecnologias de ponta como os chiplets modulares e a litografia avançada, a <strong>AMD</strong> continua a inovar e a desafiar o mercado.</p>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2024/2025 <strong>Grupo 6 - Projeto 1 - LP1</strong>. Todos os direitos reservados.</p>
+        </footer>
+    </body>
 </html>
