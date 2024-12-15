@@ -8,11 +8,12 @@ html,body {
     display: flex; /* Define o conteúdo do site como um container flexível */    
     flex-direction: column; /* Organiza os elementos de forma vertical (em coluna) */
     scroll-padding-top: 225px;
+    min-height: 100vh;
 }
 
 /* Propriedades do Main */
 main {
-    /* flex: 1;  Faz o main ocupar o restante do espaço disponível */
+    flex: 1; /* Faz o main ocupar o restante do espaço disponível */
     display: flex; /* Define o container flexível para o conteúdo dentro de main */
     flex-direction: column;  /* Organiza os elementos dentro do main em coluna (empilhados verticalmente) */
     padding: 20px; /* Adiciona espaçamento interno */
@@ -20,9 +21,6 @@ main {
     background-attachment: fixed; /* Makes the background sticky */
     background-position: center; /* Position the background in the center */
     background-size: cover; /* Make sure the background covers the full screen */
-    /* background-size: cover;  Faz a imagem cobrir todo o espaço do main */
-    /* background-position: center;  Centraliza a imagem */
-    /* background-repeat: no-repeat; Evita repetição da imagem */
 }
 
 /* Propriedades do Body */
@@ -47,7 +45,6 @@ header {
     justify-content: space-between; /* Distribui os itens de forma espaçada entre si */
     align-items: center; /* Alinha os itens verticalmente ao centro */
 }
-
 
 /* Propriedades da Nav Bar */
 nav {
@@ -98,6 +95,7 @@ li {
     color: #cccccc; 
     font-family: 'Roboto', sans-serif;
 }
+
 /* Propriedades do Menu à direita */
 .nav-right {
     flex: 2; /* Faz o item ocupar 2 partes do espaço disponível */
@@ -248,7 +246,7 @@ section li::before {
 }
 
 .block a:hover {
-    color: #f1f1f1;
+    color: #f2f2f2;
 }
 
 /*  Rodapé  */
@@ -337,22 +335,6 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
     cursor: not-allowed; /* Exibe um cursor de "não permitido" */
 }
 
-/* Estilo para os blocos da linha do tempo */
-.timeline-block {
-    display: flex; /* Exibe os elementos como flex containers */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    gap: 1em; /* Espaço de 1em entre imagem e texto */
-    text-align: left; /* Alinha o texto à esquerda */
-} 
-
-/* Estilo das imagens dentro dos blocos da linha do tempo */
-.timeline-block img {
-    width: 350px; /* Define a largura das imagens */
-    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
-    border-radius: 5px; /* Arredonda os cantos das imagens */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Aplica uma sombra nas imagens */
-}
-
 /* Estilo específico para a classe 'historia' */
 .historia {
     margin: 20px auto; /* Adiciona uma margem à esquerda */
@@ -362,8 +344,8 @@ section:has(input[type="radio"]:checked) input[type="radio"] {
 aside.timeline {
     padding: 10px; /* Adiciona preenchimento dentro do aside */
     position: fixed; /* Fixa a posição na tela */
-    left: 5px; /* Posiciona à esquerda */
-    top: 50%; /* Posiciona ao meio verticalmente */
+    left: 10px; /* Posiciona à esquerda */
+    top: 40%;
     overflow-y: auto; /* Permite o scroll vertical */
     padding: 10px 0;
     text-align: center;
@@ -385,17 +367,14 @@ aside.timeline ul li {
 aside.timeline ul li a {
     color: #f2f2f2; /* Cor de texto branca */
     text-decoration: none; /* Remove o sublinhado dos links */
-    font-size: 16px; /* Define o tamanho da fonte */
-    padding: 8px 15px; /* Adiciona preenchimento dentro do link */
     border-radius: 5px; /* Arredonda os cantos do link */
     transition: all 0.3s ease; /* Animação suave para todos os estados */
-    position: relative; /* Define a posição relativa para efeitos de sobreposição */
 }
 
 /* Efeito de hover nos links */
 aside.timeline ul li a:hover {
-    background-color: #f1f1f1; /* Cor de fundo laranja para efeito de hover */
-    color: #000; /* Cor do texto preta no hover */
+    background-color: #FF5722; /* Cor de fundo laranja para efeito de hover */
+    color: #f2f2f2; /* Cor do texto preta no hover */
 }
 
 /* Hidden Checkbox */
@@ -412,24 +391,24 @@ aside.timeline ul li a:hover {
 }
 
 .perfil {
-    border-radius: 50% !important;
-    max-width: 150px !important;
+    border-radius: 50% !important; 
+    max-width: 150px !important; 
 }
 
 .li-about {
     list-style: none;
 }
 
-.li-about a{
-    color:#f2f2f2;
+.li-about a {
+    color:#ccc;
 }
 
-.li-about a :hover{
+.li-about a :hover {
     color:#FF5722;
 }
 
 .arrow div:nth-child(1) {
-        transform: rotate(45deg) translate(4px, 0px);
+        transform: rotate(45deg) translate(5px, 0px);
         margin-left: 12px;
 }
 .arrow div:nth-child(2) {
@@ -475,7 +454,7 @@ aside.timeline ul li a:hover {
         text-align: center;
         border-radius: 15px;
     }
-
+    
     .menu a {
         display: block;
         padding: 10px 20px;
@@ -495,7 +474,7 @@ aside.timeline ul li a:hover {
         background-color: white;
         transition: none;
         font-size:18px;
-    }
+    } 
 
     /* Show Menu on Checkbox Toggle */
     #menu-toggle:checked~.menu,#menu-toggle-2:checked~.menu {
@@ -519,12 +498,12 @@ aside.timeline ul li a:hover {
 
     /* Animate Menu Icon */
     #menu-toggle-2:checked+.menu-icon div:nth-child(1) {
-        transform: rotate(-45deg) translate(-1.2px, 1.2px);
+        transform: rotate(-45deg) translate(-1.9px, 1.5px);
         margin-left: 12px;
     }
 
     #menu-toggle-2:checked+.menu-icon div:nth-child(2) {
-        transform: rotate(45deg) translate(-5px, -30px);
+        transform: rotate(45deg) translate(-4px, -30px);
         margin-left: 12px;
     }
 
@@ -543,16 +522,11 @@ aside.timeline ul li a:hover {
         display: flex; /* Exibe o menu hamburguer para dispositivos móveis */
     }
 
-    #menu-toggle:checked+.menu-icon+.nav-right {
-        display: block; /* Exibe a navegação quando o menu hamburguer for ativado */
-    }
-
-    #menu-toggle-2:checked+.menu-icon+.topics {
+    #menu-toggle:checked+.menu-icon+.nav-right,#menu-toggle-2:checked+.menu-icon+.topics,.block {
         display: block; /* Exibe a navegação quando o menu hamburguer for ativado */
     }
 
     .block {
-        display: block; /* Exibe os blocos como elementos de bloco */
         text-align: center; /* Centraliza o texto dentro dos blocos */
     }
 
@@ -574,15 +548,31 @@ aside.timeline ul li a:hover {
 
     aside.timeline {
         top: auto;
-        margin-left: auto;
-        margin-right: auto;
-        width: 15%;
+        margin: auto;
+        min-width: 100px;
+        max-width: 300px;
+        font-size:18px;
+        transition: none;
     }
 
     aside.timeline ul li a {
         padding: 5px;
         font-size: 0.8em;
     }
+
+    aside.timeline a:hover {
+        background-color: #FF5722;
+        color: white; 
+        transition: none;
+        font-size:18px;
+    }
+
+    aside.timeline a:hover.active {
+        background-color: white;
+        transition: none;
+        font-size:18px;
+    }
+
 
     .backgroud {
         background-color: rgba(0, 0, 0, 0.75);
