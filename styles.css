@@ -4,15 +4,15 @@
     padding: 0; /* Remove o padding (espaçamento interno) de todos os elementos */
 }
 
-/* Variáveis globais */ 
+/* Variáveis globais */
 :root {
-    --laranja-amd: #FF5722; 
+    --laranja-amd: #FF5722;
     --cor-texto: #ccc;
     --background-escuro: #1a1a1a;
 }
 
 html,body {
-    display: flex; /* Define o conteúdo do site como um container flexível */    
+    display: flex; /* Define o conteúdo do site como um container flexível */
     flex-direction: column; /* Organiza os elementos de forma vertical (em coluna) */
     scroll-padding-top: 225px;
     min-height: 100vh;
@@ -96,10 +96,13 @@ ul {
     padding-left: 40px; /* Adiciona padding à esquerda */
     margin: 0; /* Remove as margens padrão */
 }
+.ul-inovacoes li {
+    color: var(--cor-texto); /* Cor do texto cinza claro */
+}
 
 li {
     font-size: 18px;
-    color: white; 
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -116,7 +119,7 @@ li {
     color: white; /* Cor do texto dos links como branco */
     text-decoration: none; /* Remove o sublinhado dos links */
     font-size: 16px; /* Tamanho da fonte dos links */
-    transition: color 0.3s ease; /* Transição suave para a cor do texto */    
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
 }
 
 /* Estilos para o link ativo dentro do menu */
@@ -187,9 +190,9 @@ strong {
 
 /* Estilos para as seções */
 section {
-    background-color: rgb(0, 0, 0, 0.6); /* Background preto, com transparência 0.6 para se perceber o fundo e ser legível */  
-    border-radius: 25px; /* Bordas arredondadas */    
-    padding: 3em; /* Adiciona 3em de espaço interno */ 
+    background-color: rgb(0, 0, 0, 0.6); /* Background preto, com transparência 0.6 para se perceber o fundo e ser legível */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 3em; /* Adiciona 3em de espaço interno */
     box-shadow: 0px 6px 15px var(--cor-texto); /* Sombra laranja ao redor da seção */
     margin: 1em auto; /* Margem superior e inferior de 1em, centralizando a seção */
     display: flex; /* Usando flexbox para disposição dos itens */
@@ -202,7 +205,7 @@ section p {
     font-size: 18px; /* Tamanho da fonte dos parágrafos dentro da seção */
     margin: 15px 0; /* Margem superior e inferior de 15px */
     line-height: 1.8; /* Espaçamento entre as linhas de texto */
-    text-align: justify; /* Alinha o texto justificado */    
+    text-align: justify; /* Alinha o texto justificado */
     color: var(--cor-texto);
 }
 
@@ -230,7 +233,7 @@ section li::before {
     flex-wrap: nowrap;
     align-content: center;
     gap: 1em; /* Espaço entre a imagem e o texto */
-    text-align: left; /* Alinha o texto à esquerda */    
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 .block img {
@@ -276,7 +279,7 @@ img {
     border-radius: 10px; /* Bordas arredondadas nas imagens */
     max-width: 100%; /* Limita a largura das imagens ao tamanho máximo disponível */
     max-height: auto; /* Mantém a proporção da altura da imagem */
-} 
+}
 
 figcaption {
     font-size: 14px;
@@ -401,8 +404,8 @@ aside.timeline ul li a:hover {
 }
 
 .perfil {
-    border-radius: 50% !important; 
-    max-width: 150px !important; 
+    border-radius: 50% !important;
+    max-width: 150px !important;
 }
 
 .li-about {
@@ -444,7 +447,7 @@ aside.timeline ul li a:hover {
 
     /* Exibe o menu quando o checkbox está marcado */
     #menu-toggle:checked+.menu-icon+.nav-right, #menu-toggle-2:checked+.menu-icon+.topics {
-        display: block; 
+        display: block;
     }
 
     /* Menu Icon Styles */
@@ -470,7 +473,7 @@ aside.timeline ul li a:hover {
         text-align: center;
         border-radius: 15px;
     }
-    
+
     .menu a {
         display: block;
         padding: 10px 20px;
@@ -481,7 +484,7 @@ aside.timeline ul li a:hover {
 
     .menu a:hover {
         background-color: var(--laranja-amd);
-        color: white; 
+        color: white;
         transition: none;
         font-size:18px;
     }
@@ -490,7 +493,7 @@ aside.timeline ul li a:hover {
         background-color: white;
         transition: none;
         font-size:18px;
-    } 
+    }
 
     /* Show Menu on Checkbox Toggle */
     #menu-toggle:checked~.menu,#menu-toggle-2:checked~.menu {
@@ -578,7 +581,7 @@ aside.timeline ul li a:hover {
 
     aside.timeline a:hover {
         background-color: var(--laranja-amd);
-        color: white; 
+        color: white;
         transition: none;
         font-size:18px;
     }
